@@ -2,22 +2,25 @@
   <div class="container">
     <div class="row">
       <div class="four columns">
-        <img src="/img/main-logo.png">
+        <a href="{{ "/" | prepend: site.baseurl }}">
+          <img src="{{ "/img/main-logo.png" | prepend: site.baseurl }}">
+        </a>
       </div>
       <div class="eight columns">
         <nav id="mastnav">
           <ul>
             <li>
-              <a href="/participe">Participe</a>
+              <a href="{{ "/participe" | prepend: site.baseurl }}">Participe</a>
             </li>
             <li>
-              <a href="/programacao">Programação</a>
+              <a href="{{ "/programacao" | prepend: site.baseurl }}">Programação</a>
+              <a href="programacao">Programação</a>
             </li>
             <li>
-              <a href="/sao-paulo">Conheça a cidade</a>
+              <a href="{{ "/sao-paulo" | prepend: site.baseurl }}">Conheça a cidade</a>
             </li>
             <li>
-              <a href="/sobre">Sobre o evento</a>
+              <a href="{{ "/sobre" | prepend: site.baseurl }}">Sobre o evento</a>
             </li>
           </ul>
         </nav>
