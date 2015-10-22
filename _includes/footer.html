@@ -1,0 +1,24 @@
+<div id="mastfooter">
+  <div class="container">
+    <div class="row">
+      <div class="four columns">
+        <a class="dark site-title" href="/">
+          <div class="title-sotm">State of the Map 2016</div>
+          <div class="title-sp">São Paulo</div>
+        </a>
+      </div>
+      <div class="eight columns">
+        <nav id="pagesnav">
+          <ul>
+            {% for page in site.pages %}
+              {% if page.title %}
+                <li>
+                  <a class="page-link" href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+      </nav>
+    </div>
+  </div>
+</div>

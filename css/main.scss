@@ -1,0 +1,135 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$dark-bg: black;
+
+
+html,body {
+	font-family: $base-font-family;
+}
+
+a {
+	text-decoration: none;
+}
+
+// change font color when background is dark
+.dark {
+  color: #fff;
+}
+
+.color-red {
+  color: #bd0606;
+}
+
+#masthead {
+  background: $dark-bg;
+  padding: 20px 0;
+
+  .site-title {
+    // font-size: 22px;
+		.title-sotm {
+			font-size: 30px;
+			// float: left;
+			// position: relative;
+			// bottom: 0;
+			// text-decoration: underline;
+			@extend .color-red;
+		}
+		.title-sp {
+			font-size: 40px;
+			// float: left;
+		}
+  }
+
+  #mastnav {
+    ul {
+      margin: 5px 0 0;
+      padding: 0;
+      list-style: none;
+      float: right;
+    }
+
+		a {
+			@extend .dark;
+		}
+
+    li {
+      margin: 0 0 0 20px;
+      padding: 0;
+      position: relative;
+      float: left;
+    }
+  }
+
+}
+
+#mastfooter {
+  background: $dark-bg;
+  padding: 20px 0;
+
+  #pagesnav {
+    ul {
+      margin: 5px 0 0;
+      padding: 0;
+      list-style: none;
+      float: right;
+    }
+
+		a {
+			@extend .dark;
+		}
+
+    li {
+      margin: 0 0 0 20px;
+      padding: 0;
+      position: relative;
+      float: left;
+    }
+  }
+
+}
+
+
+
+
+
+//
+// // Our variables
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   40px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+//
+// $spacing-unit:     30px;
+//
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+//
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+//
+// // Width of the content area
+// $content-width:    800px;
+//
+// $on-palm:          600px;
+// $on-laptop:        800px;
+//
+//
+//
+// // Using media queries with like this:
+// // @include media-query($on-palm) {
+// //     .wrapper {
+// //         padding-right: $spacing-unit / 2;
+// //         padding-left: $spacing-unit / 2;
+// //     }
+// // }
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
+//     }
+// }
