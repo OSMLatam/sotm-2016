@@ -25,24 +25,81 @@ a {
 }
 
 #masthead {
-  background: $dark-bg;
-  padding: 20px 0;
+  background: url(../img/sp.jpg) center no-repeat;
+	background-size: cover;
+  padding: 80px 0 200px;
+	margin: 0 0 60px;
+	position: relative;
+	text-align: center;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(255,255,255,0.6);
+	}
+	.row {
+		position: relative;
+		z-index: 2;
+	}
+	.photo-credit {
+		font-size: 12px;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+		color: rgba(255,255,255,0.5);
+		margin: 0;
+	}
+	.latam-logo {
+		width: 100px;
+		padding: 8px;
+		border: 2px solid #982e2e;
+		display: inline-block;
+		border-radius: 100%;
+		margin: 0 0 20px;
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+	h1,
+	h2 {
+		text-align: center;
+		color: #000;
+		margin: 0;
+		a {
+			color: inherit;
+		}
+	}
+	h1 {
+		font-size: 24px;
+		font-weight: 800;
+	}
+	h2 {
+		font-size: 65px;
+		font-weight: 100;
+		color: #982e2e;
+		margin: 0 0 120px;
+	}
 
-  .site-title {
-    // font-size: 22px;
-		.title-sotm {
-			font-size: 30px;
-			// float: left;
-			// position: relative;
-			// bottom: 0;
-			// text-decoration: underline;
-			@extend .color-red;
+	#maininfo {
+		background: #982e2e;
+		display: inline-block;
+		padding: 20px 40px;
+		color: #fff;
+		font-size: 24px;
+		p.date {
+			display: inline-block;
+			margin: 0;
+			text-transform: uppercase;
+			span {
+				font-weight: 800;
+			}
 		}
-		.title-sp {
-			font-size: 40px;
-			// float: left;
-		}
-  }
+	}
 
   #mastnav {
     ul {
