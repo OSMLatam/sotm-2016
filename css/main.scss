@@ -1,135 +1,231 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
-$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
-$dark-bg: black;
+/*
+ * Variables
+ */
 
+$font-size-base: 16px !default;
+//
+// $font-size-h1: floor(($font-size-base * 2.6)) !default; // ~36px
+// $font-size-h2: floor(($font-size-base * 2.3)) !default; // ~30px
+// $font-size-h3: ceil(($font-size-base * 1.9)) !default; // ~24px
+// $font-size-h4: ceil(($font-size-base * 1.6)) !default; // ~18px
+// $font-size-h5: $font-size-base !default;
+// $font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
 
-html,body {
-	font-family: $base-font-family;
+$dark-grey: #6D6D6D;
+// $white: #fff;
+
+/*
+ * General styles
+ */
+
+section {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-a {
-	text-decoration: none;
-}
 
-// change font color when background is dark
-.dark {
-  color: #fff;
-}
 
-.color-red {
-  color: #bd0606;
-}
+/*
+ * Main section
+ */
 
-#masthead {
-  background: $dark-bg;
-  padding: 20px 0;
+#main {
+	background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../images/sp-bg.jpg');
+	background-position: top;
+	background-size: cover;
 
-  .site-title {
-    // font-size: 22px;
-		.title-sotm {
-			font-size: 30px;
-			// float: left;
-			// position: relative;
-			// bottom: 0;
-			// text-decoration: underline;
-			@extend .color-red;
-		}
-		.title-sp {
-			font-size: 40px;
-			// float: left;
-		}
-  }
+	padding-top: 100px;
+	padding-bottom: 100px;
 
-  #mastnav {
-    ul {
-      margin: 5px 0 0;
-      padding: 0;
-      list-style: none;
-      float: right;
+	.logo {
+    img {
+      width: 90%;
     }
+	}
 
-		a {
-			@extend .dark;
-		}
+	h1, h2, h3 {
+		color: white;
+	}
 
-    li {
-      margin: 0 0 0 20px;
-      padding: 0;
-      position: relative;
-      float: left;
-    }
-  }
+	h1 {
+		font-size: floor(($font-size-base * 3.0));
+	}
 
-}
-
-#mastfooter {
-  background: $dark-bg;
-  padding: 20px 0;
-
-  #pagesnav {
-    ul {
-      margin: 5px 0 0;
-      padding: 0;
-      list-style: none;
-      float: right;
-    }
-
-		a {
-			@extend .dark;
-		}
-
-    li {
-      margin: 0 0 0 20px;
-      padding: 0;
-      position: relative;
-      float: left;
-    }
-  }
+	h2 {
+		font-size: floor(($font-size-base * 2.0));
+	}
+	h3 {
+		font-size: floor(($font-size-base * 1.0));
+	}
 
 }
 
+// .layer {
+// 		background-color: rgba(248, 247, 216, 0.7);
+// 		// position: absolute;
+// 		// top: 0;
+// 		// left: 0;
+// 		width: 100%;
+// 		height: 100%;
+// }
+
+// $base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+// $dark-bg: black;
+//
+// html,body {
+// 	font-family: $base-font-family;
+// }
+//
+// a {
+// 	color: #000;
+// 	text-decoration: none;
+// }
+
+/*
+ * Fixed navbar
+ */
 
 
 
+/* Colors
+---------------------------------------------- */
+// .color-red1{ color:#bd0606; }
+// .dark { color: #fff; }
 
+
+/* Home
+---------------------------------------------- */
+// #masthead {
+//   background: url(../img/sp.jpg) center no-repeat;
+// 	background-size: cover;
+//   padding: 80px 0 100px;
+// 	margin: 0 0 60px;
+// 	position: relative;
+// 	text-align: center;
+// 	&:before {
+// 		content: '';
+// 		position: absolute;
+// 		left: 0;
+// 		top: 0;
+// 		bottom: 0;
+// 		right: 0;
+// 		background: rgba(255,255,255,0.6);
+// 	}
+// 	.row {
+// 		position: relative;
+// 		z-index: 2;
+// 	}
+// 	.photo-credit {
+// 		font-size: 12px;
+// 		position: absolute;
+// 		bottom: 5px;
+// 		right: 5px;
+// 		color: rgba(255,255,255,0.5);
+// 		margin: 0;
+// 	}
+// 	.latam-logo {
+// 		width: 100px;
+// 		padding: 8px;
+// 		border: 2px solid #982e2e;
+// 		display: inline-block;
+// 		border-radius: 100%;
+// 		margin: 0 0 20px;
+// 		img {
+// 			width: 100%;
+// 			height: auto;
+// 			display: block;
+// 		}
+// 	}
+// 	h1,
+// 	h2 {
+// 		text-align: center;
+// 		color: #000;
+// 		margin: 0;
+// 		a {
+// 			color: inherit;
+// 		}
+// 	}
+// 	h1 {
+// 		font-size: 24px;
+// 		font-weight: 800;
+// 	}
+// 	h2 {
+// 		font-size: 65px;
+// 		font-weight: 100;
+// 		color: #982e2e;
+// 		margin: 0 0 60px;
+// 	}
+// 	h3 {
+// 		margin: 0 0 120px;
+// 	}
 //
-// // Our variables
-// $base-font-family: Helvetica, Arial, sans-serif;
-// $base-font-size:   40px;
-// $small-font-size:  $base-font-size * 0.875;
-// $base-line-height: 1.5;
+// 	#maininfo {
+// 		background: #982e2e;
+// 		display: inline-block;
+// 		padding: 20px 40px;
+// 		color: #fff;
+// 		font-size: 24px;
+// 		p.date {
+// 			display: inline-block;
+// 			margin: 0;
+// 			text-transform: uppercase;
+// 			span {
+// 				font-weight: 800;
+// 			}
+// 		}
+// 	}
 //
-// $spacing-unit:     30px;
-//
-// $text-color:       #111;
-// $background-color: #fdfdfd;
-// $brand-color:      #2a7ae2;
-//
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
-//
-// // Width of the content area
-// $content-width:    800px;
-//
-// $on-palm:          600px;
-// $on-laptop:        800px;
-//
-//
-//
-// // Using media queries with like this:
-// // @include media-query($on-palm) {
-// //     .wrapper {
-// //         padding-right: $spacing-unit / 2;
-// //         padding-left: $spacing-unit / 2;
-// //     }
-// // }
-// @mixin media-query($device) {
-//     @media screen and (max-width: $device) {
-//         @content;
+//   #mastnav {
+//     ul {
+//       margin: 5px 0 0;
+//       padding: 0;
+//       list-style: none;
+//       float: right;
 //     }
+//
+// 		a {
+// 			@extend .dark;
+// 		}
+//
+//     li {
+//       margin: 0 0 0 20px;
+//       padding: 0;
+//       position: relative;
+//       float: left;
+//     }
+//   }
+//
+// }
+
+// #mastfooter {
+//   background: $dark-bg;
+//   padding: 20px 0;
+//
+//   #pagesnav {
+//     ul {
+//       margin: 5px 0 0;
+//       padding: 0;
+//       list-style: none;
+//       float: right;
+//     }
+//
+// 		a {
+// 			@extend .dark;
+// 		}
+//
+//     li {
+//       margin: 0 0 0 20px;
+//       padding: 0;
+//       position: relative;
+//       float: left;
+//     }
+//   }
+//
 // }
