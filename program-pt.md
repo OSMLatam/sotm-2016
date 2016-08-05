@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Programação
-permalink: /programacao/
+language: en
+title: Program
+permalink: /program/
 ---
 
 A programação ainda não está definida.

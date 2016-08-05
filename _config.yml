@@ -13,3 +13,47 @@ github_username:
 
 # Build settings
 markdown: kramdown
+t:
+  en:
+    menu:
+      participate:
+        label: Participate
+        url: /
+      venue:
+        label: Venue
+        url: /venue
+      program:
+        label: Program
+        url: /program
+      about:
+        label: About
+        url: /about
+  es:
+    menu:
+      participate:
+        label: Participa
+        url: /es
+      venue:
+        label: Local
+        url: /es/local
+      program:
+        label: Programa
+        url: /es/programa
+      about:
+        label: Sobre
+        url: /es/sobre
+
+  pt:
+    menu:
+      participate:
+        label: Participe
+        url: /pt
+      venue:
+        label: Local
+        url: /pt/local
+      program:
+        label: Programa
+        url: /pt/programa
+      about:
+        label: Sobre
+        url: /pt/sobre

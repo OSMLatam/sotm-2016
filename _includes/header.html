@@ -14,21 +14,24 @@
 
     <div id="sotm-navbar-collapse-1" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
+        {% for menu in site.t[page.lang].menu %}
+          <li>
+            <a href="{{ menu[1].url | prepend: site.baseurl }}">{{ menu[1].label }}</a>
+          </li>
+        {% endfor %}
+        <!--
         <li>
-          <a href="{{ "/register" | prepend: site.baseurl }}">Join us!</a>
-        </li>
-        <li>
-          <a href="{{ "/about" | prepend: site.baseurl }}">About</a>
+          <a href="{{ "/register" | prepend: site.baseurl }}">Participate</a>
         </li>
         <li>
           <a href="{{ "/participate" | prepend: site.baseurl }}">Venue</a>
         </li>
         <li>
-          <a href="{{ "/venue" | prepend: site.baseurl }}">Program</a>
+          <a href="{{ "/participate" | prepend: site.baseurl }}">Program</a>
         </li>
         <li>
-          <a href="{{ "/program" | prepend: site.baseurl }}">Sponsors</a>
-        </li>
+          <a href="{{ "/about" | prepend: site.baseurl }}">About</a>
+        </li> -->
       </ul>
   </div>
 </nav>
