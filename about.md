@@ -2,7 +2,6 @@
 layout: page
 language: en
 title: About
-permalink: /about/
 ---
 
 The conference program will be ready after the Call for Presentations.

@@ -10,11 +10,15 @@ url: "http://state.osmlatam.org" # the base hostname & protocol for your site
 baseurl: /sotm-2016
 twitter_username:
 github_username:
+exclude: [README.md]
 
 # Build settings
 markdown: kramdown
+
+# Translations
 t:
   en:
+    language_name: English
     menu:
       participate:
         label: Participate
@@ -29,6 +33,7 @@ t:
         label: About
         url: /about
   es:
+    language_name: Español
     menu:
       participate:
         label: Participa
@@ -44,6 +49,7 @@ t:
         url: /es/sobre
 
   pt:
+    language_name: Português
     menu:
       participate:
         label: Participe

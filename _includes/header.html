@@ -1,6 +1,17 @@
 <!-- <nav id="bs-navbar" class="collapse navbar-collapse"> -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
+    <div id="sotm-langbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {% assign altPages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for altPage in altPages %}
+          <li>
+            <a href="{{ altPage.url | prepend: site.baseurl }}">{{ site.t[altPage.lang].language_name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sotm-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -9,7 +20,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="#">SotM Latam 2016 São Paulo</a>
+      <a class="navbar-brand" href="#">State of Map Latam 2016</a>
     </div>
 
     <div id="sotm-navbar-collapse-1" class="collapse navbar-collapse">
@@ -34,6 +45,8 @@
         </li> -->
       </ul>
   </div>
+
+
 </nav>
 
 
