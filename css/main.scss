@@ -30,14 +30,18 @@ section {
   background-size: cover;
 }
 
+/* Language bar
+---------------------------------------------- */
+#sotm-langbar {
+  a {
+    padding: 5px 5px;
+  }
+}
 
-
-/*
- * Main section
- */
-
+/* Index
+---------------------------------------------- */
 #main {
-	background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../images/sp-bg.jpg');
+	background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('{{ site.baseurl }}/images/sp-bg.jpg');
 	background-position: top;
 	background-size: cover;
 

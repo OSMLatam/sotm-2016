@@ -1,4 +1,3 @@
-<!-- <nav id="bs-navbar" class="collapse navbar-collapse"> -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div id="sotm-langbar" class="collapse navbar-collapse">
@@ -20,7 +19,9 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="#">State of Map Latam 2016</a>
+      {% assign indexPage=site.pages | where:"ref", "index" | where:"lang", page.lang %}
+
+      <a class="navbar-brand" href="{{ indexPage.url }}">State of Map Latam 2016</a>
     </div>
 
     <div id="sotm-navbar-collapse-1" class="collapse navbar-collapse">
@@ -30,52 +31,6 @@
             <a href="{{ menu[1].url | prepend: site.baseurl }}">{{ menu[1].label }}</a>
           </li>
         {% endfor %}
-        <!--
-        <li>
-          <a href="{{ "/register" | prepend: site.baseurl }}">Participate</a>
-        </li>
-        <li>
-          <a href="{{ "/participate" | prepend: site.baseurl }}">Venue</a>
-        </li>
-        <li>
-          <a href="{{ "/participate" | prepend: site.baseurl }}">Program</a>
-        </li>
-        <li>
-          <a href="{{ "/about" | prepend: site.baseurl }}">About</a>
-        </li> -->
       </ul>
   </div>
-
-
 </nav>
-
-
-
-    <!-- <ul class="nav navbar-nav">
-      <li>
-        <a href="{{ "/" | prepend: site.baseurl }}">SotM LATAM 2016</a>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li>
-        <a href="{{ "/" | prepend: site.baseurl }}">Home</a>
-      </li>
-      <li>
-        <a href="{{ "/venue" | prepend: site.baseurl }}">Venue</a>
-      </li>
-      <li>
-        <a href="{{ "/submit-a-talk" | prepend: site.baseurl }}">Submit a talk</a>
-      </li>
-      <li>
-        <a href="{{ "/program" | prepend: site.baseurl }}">Program</a>
-      </li>
-      <li>
-        <a href="{{ "/code-of-conduct" | prepend: site.baseurl }}">Code of Conduct</a>
-      </li>
-      <li>
-        <a href="twitter.com/OSMLatam">News</a>
-      </li>
-      <li>
-        <a href="{{ "/register" | prepend: site.baseurl }}">Register</a>
-      </li>
-    </ul> -->
