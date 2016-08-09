@@ -2,20 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-3 col-md-offset-3">
-        <a class="dark site-title" href="/">
-          <div class="title-sotm">São Paulo State of the Map 2016</div>
+        {% assign indexPage=site.pages | where:"ref", "index" | where:"lang", page.lang %}
+        <a class="dark site-title" href="{{ indexPage.url }}">
+          <div class="title-sotm">State of the Map 2016</div>
         </a>
       </div>
       <div class="col-md-6">
         <nav id="pagesnav">
           <ul>
-            <a href="{{ prepend: site.baseurl }}">{{ page.title }}</a>
-            {% for page in site.pages %}
-              {% if page.title %}
-                <li>
-                  <a class="page-link" href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title }}</a>
-                </li>
-              {% endif %}
+            {% for menu in site.t[page.lang].menu %}
+              <li>
+                <a class="page-link" href="{{ menu[1].url | prepend: site.baseurl }}">{{ menu[1].label }}</a>
+              </li>
             {% endfor %}
           </ul>
       </nav>

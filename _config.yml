@@ -40,13 +40,13 @@ t:
         url: /es
       venue:
         label: Local
-        url: /es/local
+        url: /es/venue
       program:
         label: Programa
-        url: /es/programa
+        url: /es/program
       about:
         label: Sobre
-        url: /es/sobre
+        url: /es/about
 
   pt:
     language_name: Português
@@ -56,10 +56,10 @@ t:
         url: /pt
       venue:
         label: Local
-        url: /pt/local
+        url: /pt/venue/
       program:
         label: Programa
-        url: /pt/programa
+        url: /pt/program
       about:
         label: Sobre
-        url: /pt/sobre
+        url: /pt/about

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: A conferência
-permalink: /sobre/
+lang: pt
+ref: about
 ---
 
 Seções:

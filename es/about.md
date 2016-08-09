@@ -1,8 +1,8 @@
 ---
 layout: page
-language: en
-title: About
-permalink: /about/
+language: es
+title: La conferencia
+ref: about
 ---
 
 The conference program will be ready after the Call for Presentations.

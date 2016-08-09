@@ -1,9 +1,8 @@
 ---
 layout: page
 ref: venue
-language: en
-title: About
-permalink: /about/
+language: es
+title: Lugar del evento
 ---
 
 The conference program will be ready after the Call for Presentations.

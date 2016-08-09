@@ -2,7 +2,7 @@
 layout: page
 language: en
 title: Program
-permalink: /program/
+ref: program
 ---
 
 A programação ainda não está definida.

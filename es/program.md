@@ -1,8 +1,7 @@
 ---
 layout: page
-language: en
-title: Program
-permalink: /program/
+language: es
+title: Programa
 ---
 
 The conference program will be ready after the Call for Presentations.

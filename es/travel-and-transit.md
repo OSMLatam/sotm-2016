@@ -1,8 +1,8 @@
 ---
 layout: page
-language: en
-title: Program
-permalink: /program/
+language: es
+title: Como llegar
+ref: travel-and-transit
 ---
 
 The conference program will be ready after the Call for Presentations.

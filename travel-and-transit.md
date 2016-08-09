@@ -1,10 +1,9 @@
 ---
 layout: page
 language: en
-title: Program
-permalink: /program/
+title: Travel and Accommodation
+permalink: /travel-and-accomodation/
+ref: travel-and-transit
 ---
 
-The conference program will be ready after the Call for Presentations.
-
-Please follow us on Twitter or Telegram to get the latest updates.
+Soon instructions on how to travel cheap to São Paulo and how to go to the venue.
