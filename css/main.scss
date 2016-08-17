@@ -60,8 +60,9 @@ section {
   .about-button {
     display: table;
     margin: 0 auto;
+    table-layout: fixed;
+    width: 100%;
     .btn-item {
-      width: 1%;
       display: table-cell;
       vertical-align: middle;
     }
