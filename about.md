@@ -6,4 +6,4 @@ permalink: /about/
 ref: about
 ---
 
-**State of the Map Latam** is the annual conference for all mappers and [OpenStreetMap](http://osm.org) users in Latin America. This will be the second edition of the event. The first was held in Santiago de Chile from 4th to 6th September, 2015 and had about 200 attendees, with an audience varying from hardcore OSM contributors to enterprise users, to local bicycle activists. This year, we expect to have at least 300 attendees, by having a bigger space, mapathons, workshops and by reaching out the local GIS, open data and other communities related to geo information.
+**State of the Map Latam** is the annual conference for all mappers and OpenStreetMap](http://osm.org) users in Latin America. The first edition was held in Santiago de Chile in September, 2015. The 2016 edition will be in São Paulo (Brazil), from 25 to 27th November. Our programm includes talks, panels, workshops and mapathons about the most diverse subjects related to the OpenStreetMap world.
