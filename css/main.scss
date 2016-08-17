@@ -67,35 +67,12 @@ section {
     }
   }
 }
-#main {
-	background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('{{ site.baseurl }}/images/sp-bg.jpg');
-	background-position: top;
-	background-size: cover;
 
-	padding-top: 100px;
-	padding-bottom: 100px;
-
-	.logo {
-    img {
-      width: 90%;
-    }
-	}
-
-	h1, h2, h3 {
-		color: white;
-	}
-
-	h1 {
-		font-size: floor(($font-size-base * 3.0));
-	}
-
-	h2 {
-		font-size: floor(($font-size-base * 2.0));
-	}
-	h3 {
-		font-size: floor(($font-size-base * 1.0));
-	}
-
+#join-us {
+  .thumbnail {
+    padding: 20px;
+    height: 300px;
+  }
 }
 
 // .layer {
