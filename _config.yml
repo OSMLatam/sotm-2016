@@ -20,46 +20,45 @@ t:
   en:
     language_name: English
     menu:
-      participate:
-        label: Participate
-        url: /
-      venue:
-        label: Venue
-        url: /venue
+      about:
+        label: About
+        url: #about
       program:
         label: Program
         url: /program
-      about:
-        label: About
-        url: /about
+      venue:
+        label: Venue
+        url: /venue
+      register:
+        label: Register
+        url: #register
   es:
     language_name: Español
     menu:
-      participate:
-        label: Participa
-        url: /es
-      venue:
-        label: Local
-        url: /es/venue
-      program:
-        label: Programa
-        url: /es/program
       about:
         label: Sobre
-        url: /es/about
-
+        url: #about
+      program:
+        label: Programa
+        url: /program
+      venue:
+        label: Local
+        url: /venue
+      register:
+        label: Registrese
+        url: #register
   pt:
     language_name: Português
     menu:
-      participate:
-        label: Participe
-        url: /pt
-      venue:
-        label: Local
-        url: /pt/venue/
-      program:
-        label: Programa
-        url: /pt/program
       about:
         label: Sobre
-        url: /pt/about
+        url: #about
+      program:
+        label: Programa
+        url: /program
+      venue:
+        label: Local
+        url: /venue
+      register:
+        label: Registre-se
+        url: #register
