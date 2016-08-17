@@ -40,6 +40,33 @@ section {
 
 /* Index
 ---------------------------------------------- */
+.intro {
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.8)), url('{{ site.baseurl }}/images/sp-bg-compressed.jpg');
+  h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 422px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    img {
+      display: block;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  .about-button {
+    display: table;
+    margin: 0 auto;
+    .btn-item {
+      width: 1%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
 #main {
 	background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('{{ site.baseurl }}/images/sp-bg.jpg');
 	background-position: top;
