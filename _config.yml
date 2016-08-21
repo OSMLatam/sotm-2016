@@ -22,7 +22,7 @@ t:
     menu:
       about:
         label: About
-        url: #about
+        url: /#about
       program:
         label: Program
         url: /program

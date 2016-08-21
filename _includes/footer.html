@@ -1,32 +1,20 @@
 <div id="mastfooter">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-3 col-md-offset-3">
+      <div class="col-sm-12 col-md-3 col-md-offset-3">
         {% assign indexPage=site.pages | where:"ref", "index" | where:"lang", page.lang %}
         <a class="dark site-title" href="{{ indexPage.url }}">
           <div class="title-sotm">State of the Map 2016</div>
         </a>
       </div>
-      <div class="col-md-6">
-        <h3>Pages</h3>
-        <nav id="pagesnav">
-          <ul>
-            {% for menu in site.t[page.lang].menu %}
-              <li>
-                <a class="page-link" href="{{ menu[1].url | prepend: site.baseurl }}">{{ menu[1].label }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-      </nav>
-      <h3>Keep updated</h3>
-      <ul>
-        <li>OSM Wiki</li>
-        <li>Telegram</li>
-        <li>Twitter</li>
-        <li>Facebook</li>
-      </ul>
-      <h3>Contact:</h3>
-      <p>E-mail</p>
+      <div class="col-md-3 col-sm-12">
+        <h3>Keep updated</h3>
+        <ul>
+          <li><a href="https://wiki.openstreetmap.org/wiki/State_of_the_Map_Latam_2016">OSM Wiki</a></li>
+          <li><a href="https://twitter.com/openstreetmapbr">Twitter</a></li>
+          <li><a href="mailto:info@osmlatam.org">Write us an email</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
