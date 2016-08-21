@@ -1,0 +1,66 @@
+/*
+ * Variables
+ */
+/*
+ * General styles
+ */
+section {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* Language bar
+---------------------------------------------- */
+.nav-lang {
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  padding-left: 10px;
+  padding-right: 10px; }
+  .nav-lang li > a {
+    padding-left: 5px;
+    padding-right: 5px; }
+
+/* Index
+---------------------------------------------- */
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), black), url("/sotm-2016/images/sp-bg-compressed.jpg"); }
+  .intro h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 422px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff; }
+    .intro h1 img {
+      display: block;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #fff; }
+  .intro .about-button {
+    display: table;
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 100%; }
+    .intro .about-button .btn-item {
+      display: table-cell;
+      vertical-align: middle; }
+
+#join-us .thumbnail {
+  padding: 20px;
+  height: 200px; }
+
+h3 {
+  margin: 0; }
+
+h2 {
+  margin-bottom: 15px; }
+
+/*
+ * Fixed navbar
+ */
+/* Colors
+---------------------------------------------- */
+/* Home
+---------------------------------------------- */
