@@ -78,6 +78,13 @@ h3 {
   margin-bottom: 15px;
   text-transform: none !important; }
 
+.social-icon {
+  width: 60px;
+  padding: 0 10px; }
+
+.bottom-espace {
+  margin-bottom: 30px; }
+
 /*
  * Fixed navbar
  */
