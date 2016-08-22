@@ -26,40 +26,40 @@ t:
         url: /#about
       program:
         label: Program
-        url: /program
+        url: /#program
       venue:
         label: Venue
-        url: /venue
+        url: /#venue
       register:
         label: Register
-        url: #register
+        url: /#register
   es:
     language_name: Español
     menu:
       about:
         label: Sobre
-        url: #about
+        url: /#about
       program:
         label: Programa
-        url: /program
+        url: /#program
       venue:
         label: Local
-        url: /venue
+        url: /#venue
       register:
         label: Registrese
-        url: #register
+        url: /#register
   pt:
     language_name: Português
     menu:
       about:
         label: Sobre
-        url: #about
+        url: /#about
       program:
         label: Programa
-        url: /program
+        url: /#program
       venue:
         label: Local
-        url: /venue
+        url: /#venue
       register:
         label: Registre-se
-        url: #register
+        url: /#register

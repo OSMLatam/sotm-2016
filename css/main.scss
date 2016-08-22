@@ -23,11 +23,24 @@ $dark-grey: #6D6D6D;
  * General styles
  */
 
+body {
+     background-color: #272b30 !important;
+ }
+
+ .navbar-custom.top-nav-collapse {
+    background: #272b30 none repeat scroll 0 0 !important;
+}
+
 section {
   padding-top: 30px;
   padding-bottom: 60px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.venue {
+  padding-top: 15px;
+  font-size: 18px;
 }
 
 /* Language bar
@@ -46,7 +59,7 @@ section {
 /* Index
 ---------------------------------------------- */
 .intro {
-  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,1)), url('{{ site.baseurl }}/images/sp-bg-compressed.jpg');
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(39,43,48,1)), url('{{ site.baseurl }}/images/sp-bg-compressed.jpg');
   h1 {
     margin-left: auto;
     margin-right: auto;
@@ -85,8 +98,9 @@ h3 {
   margin: 0;
 }
 
-h2 {
+.sponsors {
   margin-bottom: 15px;
+  text-transform: none !important;
 }
 
 // .layer {
