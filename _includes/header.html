@@ -10,7 +10,6 @@
       </button>
 
       {% assign indexPage=site.pages | where:"ref", "index" | where:"lang", page.lang %}
-
       <a class="navbar-brand" href="{{ indexPage.url }}">State of Map Latam 2016</a>
     </div>
 
@@ -18,9 +17,9 @@
       <ul class="nav navbar-nav navbar-right nav-lang">
         {% assign altPages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         {% for altPage in altPages %}
-        <li>
-          <a href="{{ altPage.url | prepend: site.baseurl }}">{{ altPage.lang }}</a>
-        </li>
+          <li>
+            <a href="{{ altPage.url | prepend: site.baseurl }}">{{ altPage.lang }}</a>
+          </li>
         {% endfor %}
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -30,5 +29,5 @@
           </li>
         {% endfor %}
       </ul>
-  </div>
+    </div>
 </nav>
