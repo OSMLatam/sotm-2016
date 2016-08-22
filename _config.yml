@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 destination: docs
 url: "http://state.osmlatam.org" # the base hostname & protocol for your site
-baseurl: /sotm-2016
+baseurl:
 twitter_username:
 github_username:
 exclude: [README.md]
