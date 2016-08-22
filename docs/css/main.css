@@ -30,6 +30,9 @@ section {
   margin-bottom: 30px;
   margin-top: 0px !important; }
 
+.thumbnail:hover {
+  background-color: #ddd; }
+
 /* Language bar
 ---------------------------------------------- */
 .nav-lang {

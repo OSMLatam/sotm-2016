@@ -32,7 +32,7 @@ t:
         url: /#venue
       register:
         label: Register
-        url: /#register
+        url: http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684
   es:
     language_name: Español
     menu:
@@ -47,7 +47,7 @@ t:
         url: /#venue
       register:
         label: Registrese
-        url: /#register
+        url: http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684
   pt:
     language_name: Português
     menu:
@@ -62,4 +62,4 @@ t:
         url: /#venue
       register:
         label: Registre-se
-        url: /#register
+        url: http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684
