@@ -55,7 +55,11 @@ lang: en
       </p>
       <p>
         As well as OSM mappers, we will have atendees from Open Data communities, students,
-        geoinformation professionals, companies, public institutions, etc.</p>
+        geoinformation professionals, companies, public institutions, etc.
+      </p>
+      <p>
+        Our conference has a <a data-toggle="modal" data-target="#code-of-conduct-{{page.lang}}" href="">Code of Conduct</a>
+      </p>
     </div>
   </div>
 </section>
@@ -158,13 +162,15 @@ lang: en
     </div>
 
     <div class="col-sm-3 col-md-3">
-      <div class="thumbnail">
-        <img src="images/ic_group_black_24px.svg">
-        <div class="caption text-center">
-          <h3 >Propose an activity</h3>
-          <p class"text-center">Schedule a workshop or group of interest</p>
+      <a href="https://goo.gl/forms/LTWu6miaQueYDiBe2">
+        <div class="thumbnail">
+          <img src="images/ic_group_black_24px.svg">
+          <div class="caption text-center">
+            <h3 >Propose an activity</h3>
+            <p class"text-center">Schedule a workshop or group of interest</p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 
@@ -212,3 +218,5 @@ lang: en
       </div>
     </div>
   </section>
+
+{% include modals.html %}

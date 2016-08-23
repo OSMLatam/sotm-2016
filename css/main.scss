@@ -59,6 +59,19 @@ section {
   background-color: #ddd;
 }
 
+.modal-title, .modal-body {
+  color: #272b30 !important;
+}
+
+.modal-body p {
+  font-size: 18px !important;
+  margin: 10px 0;
+}
+
+.modal-body h4 {
+  margin: 25px 0;
+}
+
 /* Language bar
 ---------------------------------------------- */
 .nav-lang {
