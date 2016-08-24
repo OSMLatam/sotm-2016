@@ -7,8 +7,28 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>About - State of the Map LATAM 2016</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="The Latin American OpenStreetMap Conference">
+  <meta name="author" content="OpenStreetMap Latinoamerica">
+  <meta property="og:image" content="/images/sotm_dark.png" />
+  <meta property="og:site_name" content="State of the Map Latam 2016" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="State of the Map Latam 2016" />
+  <meta property="og:description"
+  content="La Conferencia Latinoamericana de OpenStreetMap. 25-27 Nov, São Paulo, Brasil." />
+  <meta property="og:url" content="http://state.osmlatam.org/" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@osmlatam">
+  <meta property="twitter:image" content="/images/sotm_dark.png" />
+  <meta name="twitter:title" content="State of the Map Latam 2016" />
+  <meta name="twitter:description"
+  content="La conferencia latinoamericana de OpenStreetMap. 25-27 Nov, São Paulo, Brasil." />
+  <meta name="twitter:url" content="http://state.osmlatam.org/" />
+
+<!-- Translations -->
+<link hreflang="en" href="http://state.osmlatam.org/" rel="alternate">
+<link hreflang="pt-br" href="http://state.osmlatam.org/pt/" rel="alternate">
+<link hreflang="es" href="http://state.osmlatam.org/es/" rel="alternate">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -37,6 +57,14 @@
 
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
   <nav class="navbar navbar-custom navbar-fixed-top">
   <div class="container">
@@ -114,6 +142,23 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-grayscale/3.3.7/js/grayscale.min.js"></script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
 
 </body>

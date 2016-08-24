@@ -57,6 +57,14 @@
 
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
   <nav class="navbar navbar-custom navbar-fixed-top">
   <div class="container">
@@ -264,7 +272,7 @@
     <div class="col-sm-3 col-md-3 col-md-offset-1">
       <a href="http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684">
         <div class="thumbnail">
-          <img src="images/ic_card_membership_black_24px.svg" >
+          <span class="glyphicon glyphicon-check"></span>
           <div class="caption text-center">
             <h3>Register</h3>
             <p>Book your place on the conference</p>
@@ -276,7 +284,7 @@
     <div class="col-sm-3 col-md-4">
     <a href="https://goo.gl/forms/iiLdVWF6krTXGVOA2">
       <div class="thumbnail">
-        <img src="images/ic_slideshow_black_24px.svg">
+        <span class="glyphicon glyphicon-expand"></span>
           <div class="caption text-center">
             <h3>Submit a talk</h3>
             <p>Share your work and ideas with the community</p>
@@ -288,7 +296,7 @@
     <div class="col-sm-3 col-md-3">
       <a href="https://goo.gl/forms/LTWu6miaQueYDiBe2">
         <div class="thumbnail">
-          <img src="images/ic_group_black_24px.svg">
+          <span class="glyphicon glyphicon-blackboard"></span>
           <div class="caption text-center">
             <h3 >Propose an activity</h3>
             <p class"text-center">Schedule a workshop or group of interest</p>
@@ -303,7 +311,7 @@
     <div class="col-sm-2 col-md-5 col-md-offset-1">
       <a href="mailto:info@osmlatam.org?subject=Sponsorship">
         <div class="thumbnail">
-          <img src="images/ic_work_black_24px.svg">
+          <span class="glyphicon glyphicon-briefcase"></span>
           <div class="caption text-center">
             <h3>Sponsor</h3>
             <p>Promote your business and support the Latin American community</p>
@@ -314,10 +322,23 @@
 
     <div class="col-sm-2 col-md-5">
       <div class="thumbnail">
-        <img src="images/ic_favorite_border_black_24px.svg">
+        <span class="glyphicon glyphicon-comment"></span>
         <div class="caption text-center">
-          <h3>Volunteer</h3>
-          <p>Are you an experienced mapper? Join the OSM new mapper desk as a tutor.</p>
+          <h3>Share</h3>
+          <p>Invite your friends and spread the word!</p>
+          <div class="row">
+            <div class="col-md-6 text-right twitter-col">
+              <a class="twitter-share-button"
+              href="https://twitter.com/intent/tweet?text=Participate of State of the Map Latam 2016! The Latinamerican #OpenStreetMap Conference, 25-27 Nov in São Paulo"
+              data-size="large">
+                Tweet
+              </a>
+            </div>
+            <div class="col-md-6 text-left fb-col">
+              <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+              data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -518,6 +539,23 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-grayscale/3.3.7/js/grayscale.min.js"></script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
 
 </body>

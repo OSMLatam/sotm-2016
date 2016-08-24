@@ -30,6 +30,10 @@ section {
   margin-bottom: 30px;
   margin-top: 0px !important; }
 
+.thumbnail span {
+  color: #000;
+  font-size: 20px; }
+
 .thumbnail:hover {
   background-color: #ddd; }
 
@@ -42,6 +46,20 @@ section {
 
 .modal-body h4 {
   margin: 25px 0; }
+
+.caption p {
+  margin: 7px 0 !important; }
+
+.fb_iframe_widget {
+  display: inline !important;
+  padding: 4px 0;
+  position: absolute !important; }
+
+.twitter-col {
+  padding-right: 7px; }
+
+.fb-col {
+  padding-left: 7px; }
 
 /* Language bar
 ---------------------------------------------- */
@@ -97,11 +115,3 @@ h3 {
 
 .bottom-espace {
   margin-bottom: 30px; }
-
-/*
- * Fixed navbar
- */
-/* Colors
----------------------------------------------- */
-/* Home
----------------------------------------------- */
