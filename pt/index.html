@@ -4,82 +4,224 @@ layout: default
 lang: pt
 ---
 
-
-  <section id="main">
+<header class="intro">
+  <div class="intro-body">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 logo">
-          <img src="{{ site.baseurl }}/images/sotm-logo-white.png" />
-        </div>
-        <div class="col-md-6 title">
-          <h1>A Conferência Latinoamericana do OpenStreetMap</h1>
-          <h2>25 a 27 de novembro</h2>
-          <h3>Aprenda a mapear e encontre a comunidade</h3>
+        <div class="col-md-8 col-md-offset-2">
+          <h1>
+            <img src="/images/sotm-logo-white.png" alt="State of the Map LATAM - São Paulo 2016" />
+            A Conferência Latinoamericana do OpenStreetMap
+          </h1>
+          <h2>25 a 27 de Novembro</h2>
           <div class="about-button">
-            <a target="_blank" class="btn btn-warning" href="http://foss4gar.eventbrite.com.ar/" role="button">Sobre o evento</a>
-            <a target="_blank" class="btn btn-warning" href="http://foss4gar.eventbrite.com.ar/" role="button">Participe</a>
+            <span class="btn-item">
+              <a class="btn btn-default" href="#about" role="button">Sobre o Evento</a>
+            </span>
+            <span class="btn-item">
+              <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </span>
+            <span class="btn-item">
+              <a target="_blank" class="btn btn-default"
+              href="http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684" role="button">
+                Inscreva-se
+              </a>
+            </span>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="container content-section text-center">
+  <div class="row text-center">
+    <h1>
+      Sobre o Evento
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <p>
+        State of the Map Latam é o encontro anual de todos os mapeadores e usuários do
+        OpenStreetMap na América Latina. A primeira edição foi em Santiago de Chile em Setembro de 2015. A edição de 2016 será em São Paulo, Brasil, de 25 a 27 de novembro. Nossa programação inclui palestras,
+        painéis, workshops e mapatonas sobre os temas mais diversos relacionados ao OpenStreetMap.
+      </p>
+      <p>
+        Além dos mapeadores do OSM, teremos pessoas das comunidades de Dados Abertos, estudantes, profissionais de geoinformação, empresas, instituições públicas, etc.
+      </p>
+      <p>
+        Nossa conferência tem um <a data-toggle="modal" data-target="#code-of-conduct-{{page.lang}}" href="">Código de Conduta</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="program" class="container content-section text-center">
+  <div class="row text-center">
+    <h1>
+      Programação
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <p>
+        O programa da conferência estará pronto logo. Você pode propor uma
+        <a href="https://goo.gl/forms/iiLdVWF6krTXGVOA2">palestra</a>, um workshop ou grupo de interesse.
+        O prazo final para propostas é dia 25 de Setembro.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="venue" class="content-section text-center">
+  <div class="container">
+    <div class="row text-center">
+      <h1>
+        Local
+      </h1>
+    </div>
+  </div>
+
+  {% include map.html %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="thumbnail">
+          <div class="caption text-center">
+            <h3>Biblioteca Mário de Andrade</h3>
+            <p class="venue">
+              Os primeiros dois dias do SotM Latam serão na
+              <a href="https://www.openstreetmap.org/way/48661210" target="_blank">Biblioteca Mário de Andrade</a>, no centro de São Paulo, num local com ótimas opções de acomodação e acesso fácil ao transporte público.
+            <br>
+              As estações de metrô mais próximas são a Anhangabaú (Line 3 - Red) and República (Linha 3 - Vermelha / Linha 4 - Amarela).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="thumbnail">
+          <div class="caption text-center">
+            <h3>Mobilab</h3>
+            <p class="venue">
+              No último dia, teremos uma mapatona no
+              <a href="https://www.openstreetmap.org/node/4318465018" target="_blank">Mobilab</a>, um laboratório de mobilidade urbana mantido pela Prefeitura de São Paulo, também no centro.<br>
+              A estação mais próxima é a São Bento (Linha 1 - Azul).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join-us" class="container content-section text-center">
+  <div class="row text-center">
+    <h1>
+      Como participar
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3 col-md-3 col-md-offset-1">
+      <a href="http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684">
+        <div class="thumbnail">
+          <span class="glyphicon glyphicon-check"></span>
+          <div class="caption text-center">
+            <h3>Inscreva-se</h3>
+            <p>Reserve seu lugar na conferência</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-3 col-md-4">
+    <a href="https://goo.gl/forms/iiLdVWF6krTXGVOA2">
+      <div class="thumbnail">
+        <span class="glyphicon glyphicon-expand"></span>
+          <div class="caption text-center">
+            <h3>Proponha uma Palestra</h3>
+            <p>Compartilhe seu trabalho e ideias com a comunidade</p>
+          </div>
+      </div>
+    </a>
+    </div>
+
+    <div class="col-sm-3 col-md-3">
+      <a href="https://goo.gl/forms/LTWu6miaQueYDiBe2">
+        <div class="thumbnail">
+          <span class="glyphicon glyphicon-blackboard"></span>
+          <div class="caption text-center">
+            <h3 >Proponha uma atividade</h3>
+            <p class"text-center">Workshop ou grupo de interesse</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-2 col-md-5 col-md-offset-1">
+      <a href="mailto:info@osmlatam.org?subject=Sponsorship">
+        <div class="thumbnail">
+          <span class="glyphicon glyphicon-briefcase"></span>
+          <div class="caption text-center">
+            <h3>Patrocine</h3>
+            <p>Promova seu negócio e ajude a comunidade Latinoamericana</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-2 col-md-5">
+      <div class="thumbnail">
+        <span class="glyphicon glyphicon-comment"></span>
+        <div class="caption text-center">
+          <h3>Compartilhe</h3>
+          <p>Convide todo mundo!</p>
+          <div class="row">
+            <div class="col-md-6 text-right twitter-col">
+              <a class="twitter-share-button"
+              href="https://twitter.com/intent/tweet?text=Participe do State of the Map Latam 2016! A Conferência Latinoamericana de #OpenStreetMap, 25-27 Nov em São Paulo"
+              data-size="large">
+                Tweet
+              </a>
+            </div>
+            <div class="col-md-6 text-left fb-col">
+              <div class="fb-like" data-href="http://state.osmlatam.org"
+              data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="join-us">
+  <section id="sponsors">
     <div class="container">
       <div class="row text-center">
         <h1>
-          Como participar
+          Nossa conferência tem o suporte de
         </h1>
+        <h3 class="sponsors">Patrocinador Diamante</h3>
+        <p>
+          <a href="http://mapbox.com">
+            <img src="{{ "/images/mapbox.png" | prepend: site.baseurl }}" alt="Mapbox" width="270px"/>
+          </a>
+        </p>
+        <h3 class="sponsors">Patrocinador Ouro</h3>
+        <a href="http://mapillary.com">
+          <img src="{{ "/images/mapillary.png" | prepend: site.baseurl }}" alt="Mapillary" width="180px">
+        </a>
       </div>
-
-      <div class="row">
-        <div class="col-sm-6 col-md-2 col-md-offset-1">
-          <div class="thumbnail">
-            <img src="{{ site.baseurl }}/images/ic_card_membership_black_24px.svg">
-            <div class="caption text-center">
-              <h3>Register</h3>
-              <p>Guarantee your place on the conference</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-2">
-          <div class="thumbnail">
-            <img src="{{ site.baseurl }}/images/ic_slideshow_black_24px.svg">
-            <div class="caption text-center">
-              <h3>Submit a talk</h3>
-              <p>Share your work and ideas with the community</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-2">
-          <div class="thumbnail">
-            <img src="{{ site.baseurl }}/images/ic_group_black_24px.svg">
-            <div class="caption text-center">
-              <h3 >Propose an activity</h3>
-              <p class"text-center">Schedule a desk to give a workshop or gather a group of interest</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-2">
-          <div class="thumbnail">
-            <img src="{{ site.baseurl }}/images/ic_work_black_24px.svg">
-            <div class="caption text-center">
-              <h3>Sponsor</h3>
-              <p>Promote your business and support the Latin American community</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-2">
-          <div class="thumbnail">
-            <img src="{{ site.baseurl }}/images/ic_favorite_border_black_24px.svg">
-            <div class="caption text-center">
-              <h3>Volunteer</h3>
-              <p>Are you a experienced mapper? Join the OSM new mapper desk as a tutor.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
   </section>
+
+{% include modals.html %}
