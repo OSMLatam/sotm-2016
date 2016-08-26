@@ -9,7 +9,7 @@
   <title>State of the Map LATAM 2016</title>
   <meta name="description" content="The Latin American OpenStreetMap Conference">
   <meta name="author" content="OpenStreetMap Latinoamerica">
-  <meta property="og:image" content="/images/sotm_dark.png" />
+  <meta property="og:image" content="http://state.osmlatam.org/images/sotm_dark.png" />
   <meta property="og:site_name" content="State of the Map Latam 2016" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="State of the Map Latam 2016" />
@@ -19,7 +19,7 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@osmlatam">
-  <meta property="twitter:image" content="/images/sotm_dark.png" />
+  <meta property="twitter:image" content="http://state.osmlatam.org/images/sotm_dark.png" />
   <meta name="twitter:title" content="State of the Map Latam 2016" />
   <meta name="twitter:description"
   content="La conferencia latinoamericana de OpenStreetMap. 25-27 Nov, São Paulo, Brasil." />
@@ -101,15 +101,15 @@
       <ul class="nav navbar-nav navbar-right">
         
           <li>
-            <a href="/#about">Sobre</a>
+            <a href="/es/#about">Sobre</a>
           </li>
         
           <li>
-            <a href="/#program">Programa</a>
+            <a href="/es/#program">Programa</a>
           </li>
         
           <li>
-            <a href="/#venue">Local</a>
+            <a href="/es/#venue">Local</a>
           </li>
         
           <li>
@@ -121,84 +121,390 @@
 </nav>
 
 
-    <section id="main">
+  <header class="intro">
+  <div class="intro-body">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 logo">
-          <img src="/images/sotm-logo-white.png" />
-        </div>
-        <div class="col-md-6 title">
-          <h1>La conferencia Latinoamericana de OpenStreetMap</h1>
-          <h2>25 a 27 de noviembre</h2>
-          <h3>Aprenda y conozca la comunidad</h3>
+        <div class="col-md-8 col-md-offset-2">
+          <h1>
+            <img src="/images/sotm-logo-white.png" alt="State of the Map LATAM - São Paulo 2016" />
+            La Conferencia Latinoamericana de OpenStreetMap
+          </h1>
+          <h2>25 a 27 de Noviembre</h2>
           <div class="about-button">
-            <a target="_blank" class="btn btn-warning" href="http://foss4gar.eventbrite.com.ar/" role="button">About the event</a>
-            <a target="_blank" class="btn btn-warning" href="http://foss4gar.eventbrite.com.ar/" role="button">Participate</a>
+            <span class="btn-item">
+              <a class="btn btn-default" href="#about" role="button">Acerca del evento</a>
+            </span>
+            <span class="btn-item">
+              <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </span>
+            <span class="btn-item">
+              <a target="_blank" class="btn btn-default"
+              href="http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684" role="button">
+                Registrese
+              </a>
+            </span>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="container content-section text-center">
+  <div class="row text-center">
+    <h1>
+      Acerca del evento
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <p>
+        State of the Map Latam es la conferencia anual para todos los mapeadores y usuarios de        OpenStreetMap en Latinoamérica. La primera edición se hizo en Santiago de Chile en Septiembre de 2015. La edición de 2016 se hará en São Paulo, Brasil, del 25 al 27 de Noviembre. Nuestra programación incluye charlas, paneles, workshops y mapatonas acerca de los temas más diversos relacionados a OpenStreetMap.
+      </p>
+      <p>
+        Además de meapeadores de OSM, tendremos personas de la comunidad de Datos Abiertos, estudantes, profesionales de geoinformación, empresas, instituciones públicas, etc.
+      </p>
+      <p>
+        Nuestra conferencia tiene un <a data-toggle="modal" data-target="#code-of-conduct-es" href="">Código de Conducta</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="program" class="container content-section text-center">
+  <div class="row text-center">
+    <h1>
+      Programación
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <p>
+        La programación de la conferencia se hará luego. Usted puede proponer una
+        <a href="https://goo.gl/forms/iiLdVWF6krTXGVOA2">charla</a>,
+        un <a href="https://goo.gl/forms/LTWu6miaQueYDiBe2">workshop o grupo de interés</a>.
+        El plazo final para propuestas es el día 25 de Septiembre.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="venue" class="content-section text-center">
+  <div class="container">
+    <div class="row text-center">
+      <h1>
+        Local
+      </h1>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+<script>
+  var map = L.map('map', {scrollWheelZoom: false}).setView([-23.54633, -46.63847], 16);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g', {
+    attribution: '<a href="https://mapbox.com">Mapbox</a> | Map data &copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  var library = L.marker([-23.54735, -46.642053])
+    .bindPopup('<p class="popup-content"><strong>Biblioteca Mário de Andrade</strong></p>')
+    .addTo(map);
+  var mobilab = L.marker([-23.54556, -46.633475])
+    .bindPopup('<p class="popup-content"><strong>Mobilab</strong></p>')
+    .addTo(map);
+</script>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="thumbnail">
+          <div class="caption text-center">
+            <h3>Biblioteca Mário de Andrade</h3>
+            <p class="venue">
+              Los primeiros dos días de SotM Latam se harán en la
+              <a href="https://www.openstreetmap.org/way/48661210" target="_blank">Biblioteca Mário de Andrade</a>, en el centro de São Paulo, una ubicación con buenas opciones de hospedaje y fácil acceso a transporte público.
+            <br>
+              Las estaciones de metro más cercanas son Anhangabaú (Línea 3 - Roja) y
+              República (Línea 3 - Roja / Línea 4 - Amarilla).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="thumbnail">
+          <div class="caption text-center">
+            <h3>Mobilab</h3>
+            <p class="venue">
+              En el último día, tendremos una mapatona en <a href="https://www.openstreetmap.org/node/4318465018" target="_blank">Mobilab</a>, un laboratorio de movilidad urbana de la Alcaldía de São Paulo, también ubicado en el centro de São Paulo.<br>
+              La estación de metro más cercana es São Bento (Línea 1 - Azul).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join-us" class="container content-section text-center">
+  <div class="row text-center">
+    <h1>
+      Como participar
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3 col-md-3 col-md-offset-1">
+      <a href="http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684">
+        <div class="thumbnail">
+          <span class="glyphicon glyphicon-check"></span>
+          <div class="caption text-center">
+            <h3>Registrese</h3>
+            <p>Reserve su lugar en la conferencia</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-3 col-md-4">
+    <a href="https://goo.gl/forms/iiLdVWF6krTXGVOA2">
+      <div class="thumbnail">
+        <span class="glyphicon glyphicon-expand"></span>
+          <div class="caption text-center">
+            <h3>Proponga una charla</h3>
+            <p>Comparta su trabajo y ideas con la comunidad</p>
+          </div>
+      </div>
+    </a>
+    </div>
+
+    <div class="col-sm-3 col-md-3">
+      <a href="https://goo.gl/forms/LTWu6miaQueYDiBe2">
+        <div class="thumbnail">
+          <span class="glyphicon glyphicon-blackboard"></span>
+          <div class="caption text-center">
+            <h3>Proponga actividades</h3>
+            <p class"text-center">Realice un workshop o grupo de interés</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-2 col-md-5 col-md-offset-1">
+      <a href="mailto:info@osmlatam.org?subject=Sponsorship">
+        <div class="thumbnail">
+          <span class="glyphicon glyphicon-briefcase"></span>
+          <div class="caption text-center">
+            <h3>Patrocine</h3>
+            <p>Promocione su negócio y ayude la comunidad Latinoamericana</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-2 col-md-5">
+      <div class="thumbnail">
+        <span class="glyphicon glyphicon-comment"></span>
+        <div class="caption text-center">
+          <h3>Comparta</h3>
+          <p>Invite sus amigos y ayude a divulgar nuestro evento</p>
+          <div class="row">
+            <div class="col-md-6 text-right twitter-col">
+              <a class="twitter-share-button"
+              href="https://twitter.com/intent/tweet?text=Participa del State of the Map Latam 2016! La Conferencia Latinoamericana de OpenStreetMap, 25-27 Nov en São Paulo"
+              data-size="large">
+                Tweet
+              </a>
+            </div>
+            <div class="col-md-6 text-left fb-col">
+              <div class="fb-like" data-href="http://state.osmlatam.org"
+              data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="join-us">
+  <section id="sponsors">
     <div class="container">
       <div class="row text-center">
         <h1>
-          Como participar
+          Nuestra conferencia tiene el soporte de
         </h1>
+        <h3 class="sponsors">Patrocinio Diamante</h3>
+        <p>
+          <a href="http://mapbox.com">
+            <img src="/images/mapbox.png" alt="Mapbox" width="270px"/>
+          </a>
+        </p>
+        <h3 class="sponsors">Patrocinio Oro</h3>
+        <a href="http://mapillary.com">
+          <img src="/images/mapillary.png" alt="Mapillary" width="180px">
+        </a>
       </div>
-
-      <div class="row">
-        <div class="col-sm-6 col-md-2 col-md-offset-1">
-          <div class="thumbnail">
-            <img src="/images/ic_card_membership_black_24px.svg">
-            <div class="caption text-center">
-              <h3>Register</h3>
-              <p>Guarantee your place on the conference</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-2">
-          <div class="thumbnail">
-            <img src="/images/ic_slideshow_black_24px.svg">
-            <div class="caption text-center">
-              <h3>Submit a talk</h3>
-              <p>Share your work and ideas with the community</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-2">
-          <div class="thumbnail">
-            <img src="/images/ic_group_black_24px.svg">
-            <div class="caption text-center">
-              <h3 >Propose an activity</h3>
-              <p class"text-center">Schedule a desk to give a workshop or gather a group of interest</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-2">
-          <div class="thumbnail">
-            <img src="/images/ic_work_black_24px.svg">
-            <div class="caption text-center">
-              <h3>Sponsor</h3>
-              <p>Promote your business and support the Latin American community</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-2">
-          <div class="thumbnail">
-            <img src="/images/ic_favorite_border_black_24px.svg">
-            <div class="caption text-center">
-              <h3>Volunteer</h3>
-              <p>Are you a experienced mapper? Join the OSM new mapper desk as a tutor.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
   </section>
+
+<div class="modal fade" id="code-of-conduct-en" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog  modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Conference Code of Conduct</h4>
+      </div>
+      <div class="modal-body">
+        <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.</p>
+
+        <h4>Need Help?</h4>
+
+        <p>Contact one of the organizers at the conference or write us: <a href="mailto:info@osmlatam.org">info@osmlatam.org</a>.</p>
+
+        <h4>The Quick Version</h4>
+
+        <p>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference <em>without a refund</em> at the discretion of the conference organisers.</p>
+
+        <h4>The Less Quick Version</h4>
+
+        <p>Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
+
+        <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+
+        <p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.</p>
+
+        <p>If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.</p>
+
+        <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they&#39;ll be wearing branded t-shirts.</p>
+
+        <p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
+
+        <p>We expect participants to follow these rules at conference and workshop venues and conference-related social events.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="code-of-conduct-es" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog  modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Código de Conducta de La Conferencia</h4>
+      </div>
+      <div class="modal-body">
+        <p>Se requiere que todos los asistentes, ponentes, patrocinadores y voluntarios de nuestra conferencia acepten el siguiente código de conducta. Los organizadores harán cumplir este código a lo largo del evento. Esperamos la colaboración de todos los participantes para ayudar a asegurar un ambiente seguro para todos.</p>
+
+        <h4>¿Necesitas ayuda?</h4>
+
+        <p>Hable con uno de los organizadores en la conferencia o escribanos: <a href="mailto:info@osmlatam.org">info@osmlatam.org</a>.</p>
+
+        <h4>La Versión Rápida</h4>
+
+        <p>Nuestra conferencia se dedica a ofrecer una experiencia libre de abusos para todos, independientemente de su género, orientación sexual, discapacidad, apariencia física, talla, raza o religión. No toleramos abusos de los participantes de la conferencia en ninguna de sus formas. El lenguaje e imágenes sexuales no son apropiados para ninguna sala de la conferencia, incluyendo charlas, talleres, fiestas, Twitter y otros medios online. Los participantes de la conferencia que violen estas reglas pueden ser sancionados o expulsados de la misma <em>sin reembolso</em> a discreción de los organizadores.</p>
+
+        <h4>La Versión Menos Corta</h4>
+
+        <p>Los abusos incluyen: comentarios ofensivos relativos a género, orientación sexual, discapacidad, apariencia física, talla, raza, religión, imágenes sexuales en espacios públicos, intimidación deliberada, acoso, persecución, fotografía o grabación de abusos, interrupciones continuadas de charlas u otros eventos, contacto físico inapropiado y atención sexual no deseada.</p>
+
+        <p>Se espera que los participantes instados a parar cualquier comportamiento abusivo obedezcan inmediatamente.</p>
+
+        <p>Los patrocinadores también están sujetos a la política contra abusos. En particular, los patrocinadores no deberían utilizar imágenes, actividades u otro material con contenido sexual. El personal de los puestos (voluntarios incluidos) no debería usar ropa/uniformes/disfraces sexualizados, o que de otra manera crean un ambiente sexualizado.</p>
+
+        <p>Si un participante incurre en un comportamiento abusivo, los organizadores de la conferencia pueden tomar cualquier acción que estimen oportuna, incluyendo advertencias al ofensor o su expulsión de la conferencia sin reembolso.</p>
+
+        <p>Si estás sufriendo algún abuso, adviertes abusos sobre otra persona, o tienes alguna otra preocupación, por favor contacta con algún miembro del personal de la conferencia inmediatamente. El personal de la conferencia puede ser fácilmente identificado, ya que vestirán camisetas del evento.</p>
+
+        <p>El personal de la conferencia estará contento de ayudar a los participates a contactar con la seguridad del hotel/sala o con las autoridades locales, proveer escolta o asistir de otra manera a aquellos que estén sufriendo abusos para que se sientan seguros mientras dure la conferencia. Valoramos tu asistencia.</p>
+
+        <p>Esperamos que los participantes sigan estas reglas en la la conferencia, talleres y eventos sociales relacionados con la conferencia.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="code-of-conduct-pt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog  modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Código de Conduta da conferência</h4>
+      </div>
+      <div class="modal-body">
+        <p>Todos os participantes, palestrantes, patrocinadores e voluntários da conferência precisam concordar com este código de conduta.
+        Os organizadores vão reforçar que este código seja seguido durante todo o evento. Esperamos a cooperação de todos os participantes para ajudar a garantir um ambiente seguro para todos.</p>
+
+        <h4>Precisa de ajuda?</h4>
+
+        <p>Fale com um dos organizadores na conferência ou nos envie um email: <a href="mailto:info@osmlatam.org">info@osmlatam.org</a>.</p>
+
+        <h4>Versão rápida</h4>
+
+        <p>
+          Nossa conferência é dedicada a fornecer uma experiência de conferência livre de assédio para todos,
+          independentemente do sexo, identidade de gênero e expressão, idade, orientação sexual, deficiência,
+          aparência física, tamanho corporal, cor de pele, etnia, religião (ou falta dela) ou escolhas de tecnologias.
+          Nós não toleramos o assédio aos participantes da conferência, sob qualquer forma. Linguagem e imagens sexuais
+          não são apropriadas em nenhum local da conferência, incluindo palestras, workshops, festas, Twitter e
+          outras mídias on-line. Os participantes que violarem estas regras poderão ser punidos ou expulsos da conferência
+          <em>sem restituição</em>, a critério dos organizadores da conferência.
+        </p>
+
+        <h4>Versão mais longa</h4>
+        <p>
+          Assédio inclui comentários verbais ofensivos relacionados ao gênero, identidade de gênero e expressão,
+          idade, orientação sexual, deficiência, aparência física, tamanho corporal, cor de pele, etnia, religião, escolhas
+          de tecnologias, imagens sexuais em espaços públicos, intimidação deliberada, perseguição, <em>stalking</em>,
+          fotografias ou filmagens constrangedoras, interrupção contínua das apresentações ou outros eventos, contato
+          físico inadequado e atenção sexual indesejada.
+        </p>
+
+        <p>
+          Os participantes que receberem uma solicitação para interromper qualquer comportamento de assédio devem fazê-lo imediatamente.
+        </p>
+
+        <p>
+          Os patrocinadores também estão sujeitos às políticas antiassédio. Particularmente, os patrocinadores
+          não devem usar imagens, atividades ou outro material de cunho sexual. As equipes de estandes e tendas
+          (incluindo voluntários) não devem utilizar roupas, uniformes ou trajes sexualizados ou de outra forma
+          criar um ambiente sexualizado.
+        </p>
+
+        <p>
+          Se um participante se envolve em comportamento de assédio, os organizadores da conferência podem tomar
+          todas as medidas que considerem adequadas, incluindo avisar o ofensor ou expulsá-lo da conferência sem
+          nenhum reembolso.
+        </p>
+
+        <p>
+          Caso seja assediado, perceba que alguém está sendo assediado ou tenha alguma dúvida, entre
+          em contato com um membro da equipe da conferência imediatamente. Membros da equipe da conferência podem ser
+          identificados pois estarão vestindo camisetas marcadas.
+        </p>
+
+        <p>
+          A equipe da conferência estará disposta a auxiliar os participantes a contatarem a segurança do hotel ou
+          local, assim como as devidas aplicações da lei local, fornecer escoltas ou ajudar aqueles que sofrerem
+          assédio para se sintam seguros pelo o decorrer da conferência. Nós valorizamos a sua participação.
+        </p>
+
+        <p>
+          Esperamos que os participantes sigam estas regras em salas de apresentação e workshops da conferência,
+          além de eventos sociais relacionados.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
   <div id="mastfooter">

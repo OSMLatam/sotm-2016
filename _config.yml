@@ -38,13 +38,13 @@ t:
     menu:
       about:
         label: Sobre
-        url: /#about
+        url: /es/#about
       program:
         label: Programa
-        url: /#program
+        url: /es/#program
       venue:
         label: Local
-        url: /#venue
+        url: /es/#venue
       register:
         label: Registrese
         url: http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684
@@ -53,13 +53,13 @@ t:
     menu:
       about:
         label: Sobre
-        url: /#about
+        url: /pt/#about
       program:
         label: Programa
-        url: /#program
+        url: /pt/#program
       venue:
         label: Local
-        url: /#venue
+        url: /pt/#venue
       register:
         label: Registre-se
         url: http://www.eventbrite.com/e/state-of-the-map-latam-2016-tickets-27254747684

@@ -61,6 +61,9 @@ section {
 .fb-col {
   padding-left: 7px; }
 
+.nav li a {
+  padding: 10px; }
+
 /* Language bar
 ---------------------------------------------- */
 .nav-lang {
