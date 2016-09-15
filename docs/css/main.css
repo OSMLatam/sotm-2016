@@ -64,6 +64,9 @@ section {
 .nav li a {
   padding: 10px; }
 
+.content-section {
+  padding-top: 80px !important; }
+
 /* Language bar
 ---------------------------------------------- */
 .nav-lang {
