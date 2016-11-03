@@ -69,12 +69,12 @@ lang: pt
       Programação
     </h1>
   </div>
-
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>
-        Estamos selecionando as palestras e atividades e publicaremos a grade de programação em breve.
-      </p>
+  <div ng-app="App" ng-controller="sotm">
+    <div ng-repeat="day in days">
+      <h3>{[{ day.date_pt }]}</h3>
+      <br>
+      {% include program.html %}
+      <br>
     </div>
   </div>
 </section>

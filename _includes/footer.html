@@ -21,6 +21,62 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-grayscale/3.3.7/js/grayscale.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+<script type="text/javascript" src='{{ "/js/program.js" | prepend: site.baseurl }}'></script>
+<!-- Custom Theme JavaScript -->
+<script>
+  // Closes the sidebar menu
+  $("#menu-close").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+  });
+  // Opens the sidebar menu
+  $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+  });
+  // Scrolls to the selected menu item on the page
+  $(function() {
+      $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                  $('html,body').animate({
+                      scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+              }
+          }
+      });
+  });
+  //#to-top button appears after scrolling
+  var fixed = false;
+  $(document).scroll(function() {
+      if ($(this).scrollTop() > 250) {
+          if (!fixed) {
+              fixed = true;
+              // $('#to-top').css({position:'fixed', display:'block'});
+              $('#to-top').show("slow", function() {
+                  $('#to-top').css({
+                      position: 'fixed',
+                      display: 'block'
+                  });
+              });
+          }
+      } else {
+          if (fixed) {
+              fixed = false;
+              $('#to-top').hide("slow", function() {
+                  $('#to-top').css({
+                      display: 'none'
+                  });
+              });
+          }
+      }
+  });
+</script>
 
 <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],

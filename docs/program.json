@@ -1,0 +1,8 @@
+{[
+  {'hour': '08:30', 'type': 'registering'},
+  {'hour': '09:30', 'auditorium': {'talk': 22, 'duration': 30}, 'mezanino': {'talk': 33, 'duration': 90}},
+  {'hour': '10:00', 'auditorium': {'talk': 23, 'duration': 60}, 'mezanino': none},
+  {'hour': '11:00', 'auditorium': {'talk': 25, 'duration': 30}, 'mezanino': {'talk': 26, 'duration': 60}},
+  {'hour': '11:30', 'auditorium': {'talk': 1, 'duration': 30}, 'mezanino': none},
+  {'hour': '12:00', 'type': 'lunch'},
+]}

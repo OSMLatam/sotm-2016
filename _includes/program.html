@@ -1,0 +1,67 @@
+<div id="program-board" class="container-fluid">
+  <div class="row program-row grid--borderBetween" ng-repeat="activity in day.program">
+    <div class="col-xs-1">
+      <p>{[{activity.hour}]}</p>
+    </div>
+    <div class="col-xs-11 grid--borderBetween">
+      <div class="col-xs-12 auditorium" ng-if="activity.type == 'interval'">
+        <p>{[{ activity.message }]}</p>
+      </div>
+      <div class="col-xs-6 auditorium" ng-if="activity.auditorium.talk"
+      ng-init="talk = get_talk(activity.auditorium.talk);">
+        <label>
+          <span class="glyphicon glyphicon-map-marker"></span>
+          <span class="place">Auditório</span>
+          <span class="glyphicon glyphicon-time"></span>
+          <span class="time">{[{ activity.auditorium.duration }]} min</span>
+        </label>
+        <p class="talk-title">
+          {[{ talk.title }]}
+        </p>
+        <p class="speaker">
+          {[{ talk.name }]}
+        </p>
+        <p>
+          <button class="btn btn-program btn-xs" type="button" data-toggle="collapse"
+          data-target="#desc-{[{ talk.id }]}" aria-expanded="false" aria-controls="collapseExample">
+          <span class="glyphicon glyphicon-plus"></span> Descrição</button>
+        </p>
+        <div class="collapse xs-12" id="desc-{[{ talk.id }]}">
+          <p class="well">
+            {[{ talk.desc }]}
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-6 empty" ng-if="!activity.auditorium.talk"></div>
+
+      <div class="col-xs-6 room" ng-if="activity.mezanino.talk"
+        ng-init="talk = get_talk(activity.mezanino.talk);">
+        <label>
+          <span class="glyphicon glyphicon-map-marker"></span>
+          <span class="place">Mezanino</span>
+          <span class="glyphicon glyphicon-time"></span>
+          <span class="time">{[{ activity.auditorium.duration }]} min</span>
+        </label>
+        <p class="talk-title">
+          {[{ talk.title }]}
+        </p>
+        <p class="speaker">
+          {[{ talk.name }]}
+        </p>
+        <p>
+          <button class="btn btn-program btn-xs" type="button" data-toggle="collapse"
+          data-target="#desc-{[{ talk.id }]}" aria-expanded="false" aria-controls="collapseExample">
+            <span class="glyphicon glyphicon-plus"></span> Descrição
+          </button>
+        </p>
+        <div class="collapse xs-12" id="desc-{[{ talk.id }]}">
+          <p class="well">
+            {[{ talk.desc }]}
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-6 empty" ng-if="!activity.mezanino.talk"></div>
+    </div>
+  </div>
+</div>

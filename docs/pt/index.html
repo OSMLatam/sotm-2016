@@ -45,7 +45,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-grayscale/3.3.7/css/grayscale.min.css">
   <!-- Leaflet -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
 
   <link rel="stylesheet" href="/css/main.css">
 
@@ -72,9 +72,7 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sotm-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <i class="fa fa-bars"></i>
       </button>
 
       
@@ -186,12 +184,79 @@
       Programação
     </h1>
   </div>
+  <div ng-app="App" ng-controller="sotm">
+    <div ng-repeat="day in days">
+      <h3>{[{ day.date_pt }]}</h3>
+      <br>
+      <div id="program-board" class="container-fluid">
+  <div class="row program-row grid--borderBetween" ng-repeat="activity in day.program">
+    <div class="col-xs-1">
+      <p>{[{activity.hour}]}</p>
+    </div>
+    <div class="col-xs-11 grid--borderBetween">
+      <div class="col-xs-12 auditorium" ng-if="activity.type == 'interval'">
+        <p>{[{ activity.message }]}</p>
+      </div>
+      <div class="col-xs-6 auditorium" ng-if="activity.auditorium.talk"
+      ng-init="talk = get_talk(activity.auditorium.talk);">
+        <label>
+          <span class="glyphicon glyphicon-map-marker"></span>
+          <span class="place">Auditório</span>
+          <span class="glyphicon glyphicon-time"></span>
+          <span class="time">{[{ activity.auditorium.duration }]} min</span>
+        </label>
+        <p class="talk-title">
+          {[{ talk.title }]}
+        </p>
+        <p class="speaker">
+          {[{ talk.name }]}
+        </p>
+        <p>
+          <button class="btn btn-program btn-xs" type="button" data-toggle="collapse"
+          data-target="#desc-{[{ talk.id }]}" aria-expanded="false" aria-controls="collapseExample">
+          <span class="glyphicon glyphicon-plus"></span> Descrição</button>
+        </p>
+        <div class="collapse xs-12" id="desc-{[{ talk.id }]}">
+          <p class="well">
+            {[{ talk.desc }]}
+          </p>
+        </div>
+      </div>
 
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>
-        Estamos selecionando as palestras e atividades e publicaremos a grade de programação em breve.
-      </p>
+      <div class="col-xs-6 empty" ng-if="!activity.auditorium.talk"></div>
+
+      <div class="col-xs-6 room" ng-if="activity.mezanino.talk"
+        ng-init="talk = get_talk(activity.mezanino.talk);">
+        <label>
+          <span class="glyphicon glyphicon-map-marker"></span>
+          <span class="place">Mezanino</span>
+          <span class="glyphicon glyphicon-time"></span>
+          <span class="time">{[{ activity.auditorium.duration }]} min</span>
+        </label>
+        <p class="talk-title">
+          {[{ talk.title }]}
+        </p>
+        <p class="speaker">
+          {[{ talk.name }]}
+        </p>
+        <p>
+          <button class="btn btn-program btn-xs" type="button" data-toggle="collapse"
+          data-target="#desc-{[{ talk.id }]}" aria-expanded="false" aria-controls="collapseExample">
+            <span class="glyphicon glyphicon-plus"></span> Descrição
+          </button>
+        </p>
+        <div class="collapse xs-12" id="desc-{[{ talk.id }]}">
+          <p class="well">
+            {[{ talk.desc }]}
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-6 empty" ng-if="!activity.mezanino.talk"></div>
+    </div>
+  </div>
+</div>
+
+      <br>
     </div>
   </div>
 </section>
@@ -580,6 +645,62 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-grayscale/3.3.7/js/grayscale.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+<script type="text/javascript" src='/js/program.js'></script>
+<!-- Custom Theme JavaScript -->
+<script>
+  // Closes the sidebar menu
+  $("#menu-close").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+  });
+  // Opens the sidebar menu
+  $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+  });
+  // Scrolls to the selected menu item on the page
+  $(function() {
+      $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                  $('html,body').animate({
+                      scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+              }
+          }
+      });
+  });
+  //#to-top button appears after scrolling
+  var fixed = false;
+  $(document).scroll(function() {
+      if ($(this).scrollTop() > 250) {
+          if (!fixed) {
+              fixed = true;
+              // $('#to-top').css({position:'fixed', display:'block'});
+              $('#to-top').show("slow", function() {
+                  $('#to-top').css({
+                      position: 'fixed',
+                      display: 'block'
+                  });
+              });
+          }
+      } else {
+          if (fixed) {
+              fixed = false;
+              $('#to-top').hide("slow", function() {
+                  $('#to-top').css({
+                      display: 'none'
+                  });
+              });
+          }
+      }
+  });
+</script>
 
 <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],

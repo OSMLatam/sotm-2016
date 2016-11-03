@@ -123,3 +123,63 @@ h3 {
 
 .bottom-espace {
   margin-bottom: 30px; }
+
+#program-board {
+  background-color: #fff; }
+
+#program-board p, #program-board label {
+  margin: 10px 0 !important; }
+
+#program-board p {
+  font-size: 16px;
+  color: #000; }
+
+.talk-title {
+  font-weight: bold; }
+
+#program-board span {
+  font-size: 12px;
+  color: #31708f; }
+
+#program-board .col-xs-1 {
+  border-top: 1px solid #b2b2b2; }
+
+.auditorium {
+  border-top: 1px solid #b2b2b2;
+  border-left: 1px solid #b2b2b2; }
+
+.room {
+  border-top: 1px solid #b2b2b2; }
+
+.empty {
+  border-left: 1px solid #b2b2b2; }
+
+.btn-program {
+  border-radius: 3px;
+  background-color: #ddd; }
+
+.btn-program:hover {
+  border-radius: 3px;
+  background-color: #ddd; }
+
+.col-xs-1, .col-xs-11 {
+  padding: 0 !important; }
+
+.grid--borderBetween > [class*='col-']:before,
+.grid--borderBetween > [class*='col-']:after {
+  background: #b2b2b2;
+  bottom: 0;
+  content: " ";
+  position: absolute;
+  width: 1px;
+  top: 0; }
+
+.grid--borderBetween > [class*='col-']:before {
+  left: 0; }
+
+.grid--borderBetween > [class*='col-']:after {
+  right: -1px; }
+
+.grid--borderBetween > [class*='col-']:first-child:before,
+.grid--borderBetween > [class*='col-']:last-child:after {
+  display: none; }

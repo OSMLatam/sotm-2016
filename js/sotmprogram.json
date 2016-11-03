@@ -1,0 +1,252 @@
+{
+"days": [
+  {"date_en": "Friday - November 25th",
+  "date_es": "Viernes - 25/11",
+  "date_pt": "Sexta-feira - 25/11",
+  "program": [
+    {"hour": "08:30", "type": "interval", "message": "Credenciamento / Acreditación / Registration"},
+    {"hour": "09:30", "auditorium": {"talk": 22, "duration": 30}, "mezanino": {"talk": 32, "duration": 90}},
+    {"hour": "10:00", "auditorium": {"talk": 23, "duration": 60}, "mezanino": {}},
+    {"hour": "11:00", "auditorium": {"talk": 20, "duration": 30}, "mezanino": {"talk": 25, "duration": 30}},
+    {"hour": "11:30", "auditorium": {"talk": 1, "duration": 30}, "mezanino": {}},
+    {"hour": "12:00", "type": "interval", "message": "Almoço / Almuerzo / Lunch"},
+    {"hour": "13:30", "auditorium": {"talk": 3, "duration": 30}, "mezanino": {"talk": 9, "duration": 30}},
+    {"hour": "14:00", "auditorium": {"talk": 8, "duration": 30}, "mezanino": {"talk": 31, "duration": 90}},
+    {"hour": "14:30", "auditorium": {"talk": 24, "duration": 30}, "mezanino": {}},
+    {"hour": "15:00", "auditorium": {"talk": 12, "duration": 30}, "mezanino": {}},
+    {"hour": "15:30", "type": "interval", "message": "Coffee Break"},
+    {"hour": "15:45", "auditorium": {"talk": 7, "duration": 30}, "mezanino": {"talk": 34, "duration": 60}},
+    {"hour": "16:15", "auditorium": {"talk": 17, "duration": 30}, "mezanino": {}},
+    {"hour": "16:45", "auditorium": {"talk": 19, "duration": 30}, "mezanino": {"talk": 29, "duration": 60}},
+    {"hour": "17:45", "type": "interval", "message": "Fim / Fin / End"}
+    ]
+  },
+  {"date_en": "Saturday - November 26th",
+  "date_es": "Sábado - 25/11",
+  "date_pt": "Sábado - 25/11",
+  "program": [
+    {"hour": "08:30", "type": "interval", "message": "Credenciamento / Acreditación / Registration"},
+    {"hour": "09:30", "auditorium": {"talk": 2, "duration": 30}, "mezanino": {"talk": 28, "duration": 90}},
+    {"hour": "10:00", "auditorium": {"talk": 10, "duration": 30}, "mezanino": {}},
+    {"hour": "10:30", "auditorium": {"talk": 14, "duration": 30}, "mezanino": {}},
+    {"hour": "11:00", "auditorium": {"talk": 15, "duration": 60}, "mezanino": {"talk": 13, "duration": 30}},
+    {"hour": "12:00", "type": "interval", "message": "Almoço / Almuerzo / Lunch"},
+    {"hour": "13:30", "auditorium": {"talk": 16, "duration": 30}, "mezanino": {"talk": 30, "duration": 60}},
+    {"hour": "14:00", "auditorium": {"talk": 6, "duration": 30}, "mezanino": {}},
+    {"hour": "14:30", "auditorium": {"talk": 4, "duration": 30}, "mezanino": {"talk": 27, "duration": 60}},
+    {"hour": "15:00", "auditorium": {"talk": 5, "duration": 30}, "mezanino": {}},
+    {"hour": "15:30", "type": "interval", "message": "Coffee Break"},
+    {"hour": "15:45", "auditorium": {"talk": 26, "duration": 60}, "mezanino": {"talk": 11, "duration": 30}},
+    {"hour": "16:15", "auditorium": {}, "mezanino": {"talk": 21, "duration": 30}},
+    {"hour": "16:45", "auditorium": {"talk": 33, "duration": 60}, "mezanino": {}},
+    {"hour": "17:45", "type": "interval", "message": "Fim / Fin / End"}
+    ]
+  }
+],
+"talks": [
+ {
+   "id": 1,
+   "title": "All you need is a phone",
+   "desc": "It is 2016, and you don't need to install Java, to learn tagging or even to know about OpenStreetMap to improve the map or your neighbourhood. We have an editor that pretends to be just a simple mapping application, but helps collecting points of interest and their opening hours on the way: MAPS.ME.",
+   "name": "Ilya Zverev"
+ },
+ {
+   "id": 2,
+   "title": "Adding Bike Lanes to OSM",
+   "desc": "Adding bike lanes to OpenStreetMap can get complex, but it can be worth the effort. This talk will cover why you would want to map bike lanes, the basics of mapping bike lanes, and a case study of mapping bike lanes in New York City.",
+   "name": "Eric Brelsford"
+ },
+ {
+   "id": 3,
+   "title": "Mejorando el mapa todos los días con herramientas de codigo abierto",
+   "desc": "Yo voy a explicar acerca de osmlint, to-fix, osmcha, herramientas que el equipo de datos de Mapbox utiliza diariamente para mejorar el mapa y que están disponibles para el uso de la comunidad.",
+   "name": "Ruben Lopez Mendoza"
+ },
+ {
+   "id": 4,
+   "title": "Construyendo herramientas de codigo abierto para hacer el mapeo más fácil",
+   "desc": "Nosotros hacemos proyectos de mapeo para mejorar la navegabilidad. Cada proyecto es una oportunidad de mejorar el proceso de mapeo mediante el desarrollo de herramientas open source, lo que sumado a los datasets and guías de mapeo, nos permite mejorar el mapa",
+   "name": "Eliane Sammy Joyo Meneses"
+ },
+ {
+   "id": 5,
+   "title": "Automatización de la incorporación de alturas de calle en Argentina",
+   "desc": "Se trata de una metodología semiautomática que incluye el uso de PostGIS, complementos de QGIS y el plugin Conflation de JOSM para llevar las alturas publicadas por instituciones oficiales en el esquema US Streets de ESRI al esquema Karlsruhe utilizado por OSM para la geocodificación de domicilios.",
+   "name": "Horacio Castellaro"
+ },
+ {
+   "id": 6,
+   "title": "Mapa de tempo médio de deslocamento urbano a partir do Censo 2010",
+   "desc": "A palestra vai descrever uma metodologia criada para a elaboração de mapas de tempo médio de deslocamento a partir de dados abertos das áreas de ponderação do Censo 2010 do IBGE.",
+   "name": "Pedro Guedes"
+ },
+ {
+   "id": 7,
+   "title": "Arte Fora do Museu",
+   "desc": "Projeto de mapeamento de obras de arte no espaço público baseado em Open Street Maps, criado em 2011. Hoje em diversos países e dezenas de cidades do Brasil, queremos mostrar os pontos fortes e fracos do sistema e buscar desenvolvedores interessados em melhorar essa plataforma livre.",
+   "name": "Andre Deak"
+ },
+ {
+   "id": 8,
+   "title": "Caminhos Históricos",
+   "desc": "Utilizando o OSM para identificar roteiros descritos em mapas antigos",
+   "name": "Linhares"
+ },
+ {
+   "id": 9,
+   "title": "Medida SP: experimentos com dados abertos em São Paulo",
+   "desc": "Vou falar sobre o meu trabalho no meu blog http://medidasp.tumblr.com/, incluindo análises realizadas, ferramentas utilizadas, a organização de uma oficina de mapeamento colaborativo no Festival Cocidade 2016, e as alegrias e tristezas do mapeamento e uso de dados abertos em São Paulo.",
+   "name": "Bernardo Pacheco Loureiro"
+ },
+ {
+   "id": 10,
+   "title": "O OpenStreetMap como ferramenta de divulgação de informações turísticas.",
+   "desc": "Apresenta a experiência de mapeamento turístico da vila da Barra do Superagui, no litoral do Paraná, com o uso do OpenStreetMap como plataforma de divulgação, da abordagem de Cartografia Social para coleta de dados e do inventário turístico do ministério do turismo como diretriz para a coleta.",
+   "name": "Everton Bortolini"
+ },
+ {
+   "id": 11,
+   "title": "O uso do OpenStreetMap na gestão de trilhas em unidades de conservação brasileiras: potencialidades e limitações",
+   "desc": "Esta proposta de discussão visa demonstrar os potenciais e as limitações da plataforma OpenStreetMap para o caso da gestão de trilhas existentes em unidades de conservação brasileiras",
+   "name": "João Vitor Meza Bravo"
+ },
+ {
+   "id": 12,
+   "title": "Melhorando o Brasil a partir de alguns dados do IBGE",
+   "desc": "Será demonstrado um método para se obter, processar e disponibilizar dados vetorizados das cartas do IBGE, junto com alguns usos e ideias para beneficiar o Brasil no OpenStreetMap.",
+   "name": "Nelson A. de Oliveira"
+ },
+ {
+   "id": 13,
+   "title": "peabiru",
+   "desc": "Demonstração de uma ferramenta para identificar problemas de conexão entre localidades.",
+   "name": "Francisco"
+ },
+ {
+   "id": 14,
+   "title": "Como analisar a qualidade dos dados do OSM em áreas heterogêneas no Brasil? ",
+   "desc": "A densidade de informações no OSM varia em áreas heterogêneas no Brasil (metrópoles, áreas rurais, turísticas,etc.) Esta palestra descreve estudos desenvolvidos na UFPR para quantificar e visualizar estas desigualdades para alcançar o entendimento sobre áreas carentes de atualizações.",
+   "name": "Silvana Philippi Camboim"
+ },
+ {
+   "id": 15,
+   "title": "Mucho mapeador y poca mapeadora",
+   "desc": "Discusión alrededor de la poca participación de las mujeres en comunidades como OSM. No se trabajará en base a categorías analíticas, sino está pensando más como una charla/debate sobre la situación de las mujeres en la comunidad y su contribución al proyecto. ",
+   "name": "Selene Yang Rappaccioli"
+ },
+ {
+   "id": 16,
+   "title": "Abra seu transporte público com OpenStreetMap",
+   "desc": "In this presentation, I will show how data from OpenStreetMap can be used to generate GTFS, the de-facto standard for public transport data, so it can be used by Transportr and many other tools.",
+   "name": "Torsten"
+ },
+ {
+   "id": 17,
+   "title": "Mapas Culturais",
+   "desc": "Mapas Culturais é um software livre para mapeamento colaborativo e gestão da cultura que contribui tanto para qualificar a gestão pública, ao promover mais eficiência, quanto para a sua atualização frente às novas Tecnologias da Informação e Comunicação.",
+   "name": "Leonardo Germani"
+ },
+ {
+   "id": 18,
+   "title": "Uma visão geral sobre controle de qualidade no OSM",
+   "desc": "Serão demonstrados conceitos de controle de qualidade no OpenStreetMap, ferramentas para identificação, análise e tratamento de problemas, além de discutir ideias que possam evitar erros e trazer melhorias ao projeto.",
+   "name": "Nelson A. de Oliveira"
+ },
+ {
+   "id": 19,
+   "title": "Mapillary",
+   "desc": "Mapillary es un street view colaborativo",
+   "name": "Cláudio Cossio & Jorge L. Batista (pb) Echevarría "
+ },
+ {
+   "id": 20,
+   "title": "Mapas, Eleições e a distribuição do poder pela cidade",
+   "desc": "Como os mapas eleitorais e as informações públicas podem nos ajudar a entender melhor o contexto [geo]político da cidade.",
+   "name": "Pedro Markun"
+ },
+ {
+   "id": 21,
+   "title": "CRP - Código de Roteamento Postal, uma alternativa para o CEP",
+   "desc": "O código de CEP tem seu uso bloqueado por direitos autorais, mas para fins de roteamento, controle de qualidade, classificação de faces de quadra, e outros, não precisamos usar exatamente o CEP, pode ser uma transcrição trocando alguns dígitos por letras, no que consiste a convenção do CRP.",
+   "name": "Peter de Padua Krauss"
+ },
+ {
+   "id": 22,
+   "title": "Poner a Cuba en el Mapa",
+   "desc": "De los esfuerzos para mantener la comunidad de OpenStreetMap cubana en condiciones de muy baja conectividad y con restricciones de tipo legal en cuanto a la generación y uso de cartografía en ausencia de datos públicos",
+   "name": "Jorge L. Batista (pb) Echevarría"
+ },
+ {
+   "id": 23,
+   "title": "Repubikla : Experiencias y construcción de comunidad para la documentación de la movilidad no motorizada ",
+   "desc": "El grupo de trabajo Repubikla se esfuerza desde hace 2 años en generar información desde la sociedad civil que promueva mejores prácticas de gestión de datos, infraestructura y programas de seguridad vial para ciclistas y peatones. Se presentan experiencias y analiza la participación comunitaria. ",
+   "name": "Céline Jacquin"
+ },
+ {
+   "id": 24,
+   "title": "Identificación de zona de vidas en espacios geográficos con el uso de herramientas colaborativas",
+   "desc": "Este proyecto pretende promover e impulsar actividades académicas y comunitarias con la utilización de OpenStreetMap, para la actualización de información a partir de fotografías colaborativas Mapillary, utilizadas para el análisis visual de identificación de zonas de vida, Campus Cota Cota.",
+   "name": "Katia Choquehuanca Quispe"
+ },
+ {
+   "id": 25,
+   "title": "Mapping para novos mappers",
+   "desc": "Workshop to introduce people interested in mapping to all the benefits of OpenStreetMap and how to use it for their projects.",
+   "name": "Miriam González"
+ },
+ {
+   "id": 26,
+   "title": "ImproveOSM, Cygnus y OpenStreetView, herramientas desarrolladas para la mejora de OSM",
+   "desc": "Telenav ha desarrollado en los últimos años herramientas que pueden apoyar distintos proyectos para la mejora de datos en OSM. Esta charla mencionará como funcionan dichas herramientas y mostrará los resultados que se han obtenido en distintas partes del mundo.",
+   "name": "Miriam González"
+ },
+ {
+   "id": 27,
+   "title": "Planos e concepções para o desenvolvimento da comunidade",
+   "desc": "Tal grupo visa fomentar e analisar ações necessárias para o aprimoramento e crescimento da comunidade, tratando tanto da parte humana (como atrair e manter novos mapeadores, elaborar o processo de boas vindas, ampliar a comunicação entre os participantes, etc), como da parte técnica (implementação de novas ferramentas, estilos próprios de mapa, desenvolvimento de documentação, disponibilização de dados, entre outros). A intenção é ter uma conversa informal, em formato de brainstorming, para troca de pensamentos, sugestões e propostas, além de tirar dúvidas. Aberto a todos os que tiverem interesse em participar do OSM, independente de serem iniciantes ou já possuírem alguma experiência.",
+   "name": "Nelson A. de Oliveira"
+ },
+ {
+   "id": 28,
+   "title": "Herramientas de codigo abierto para mejorar el mapa",
+   "desc": "A sesión práctica para aprender como escribir un poco de código para la detección de errores en osmlint y subir esta detección a to-fix y mejorar el map. https://gist.github.com/Rub21/693c55331e8c80b9ebf6e2ce82fb531d",
+   "name": "Ruben Lopez Mendoza"
+ },
+ {
+   "id": 29,
+   "title": "Organizações públicas e dados abertos no OSM",
+   "desc": "Um workshop que discuta formas, benefícios, desafios, entre outras questões acerca da participação das organizações públicas na colaboração com o OSM na divulgação de dados básicos oficiais  (bases cartográficas, imagens de sensoriamento remoto, etc.) a fim de garantir ao cidadão informações mais atualizadas e sem restrição de direitos autorais para que as edições sejam realizadas em cima de bases mais precisas e atualizadas, visto que, especialmente para imagens, há um acervo um pouco desatualizado e com baixa qualidade para edições que exijam alta resolução disponíveis atualmente no OSM para muitos pontos do Brasil. ",
+   "name": "Harlan Rodrigo Ferreira da Silva"
+ },
+ {
+   "id": 30,
+   "title": "WikiOSM en Español",
+   "desc": "Actividad comunitaria y de coordinación para mejorar las wiki-páginas y así fomentar su uso como consulta oficial. A menudo existe mucho interés de colaborar pero tener documentos en otros idiomas aumenta una barrera más. En la actividad se propondría tomar una tarea (previamente sistematizada) de traducción, investigar y mejorar la página con todas las variantes de la región. A la larga formar red de traducción que vayan mejorando por su cuenta bajo una lista centralizada de tareas.",
+   "name": "Marco Antonio"
+ },
+ {
+   "id": 31,
+   "title": "Agregar datos de navegación en OSM",
+   "desc": "Agregar datos a OSM necesarios para la navegación tales como las restricciones de giro, los carriles de giro y rutas es importante para el desarrollo de productos navegables. Sin embargo la adición de estos datos en el mapa a veces es complejo para la comunidad, pero es la única forma de mejorar la navegación en OpenstreetMap. En este taller voy a hablar de cómo agregar estos atributos en el mapa haciendo uso de JOSM, iD y nuevos plugins que éstos tienen para hacer más sencillo el flujo de trabajo.",
+   "name": "Karito Tenorio Palomino"
+ },
+ {
+   "id": 32,
+   "title": "Utilizando y construyendo plugins de JOSM para mapear mejor",
+   "desc": "A basic hands-on workshop to start developing plugins for JOSM, covering from environment setup, to coding and testing in JOSM. Una sesión básica práctica para empezar con el desarrollo de plugins para JOSM, comprende desde la configuración del entorno, escritura de código y prueba en JOSM",
+   "name": "Eliane Sammy Joyo Meneses"
+ },
+ {
+   "id": 33,
+   "title": "Debate: integración OSM Latam ",
+   "desc": "La actividad se divide en dos partes, la primera es una revisión breve de cómo las comunidades de la región se fueron integrando y fortaleciendo, luego un resumen de la actualidad de OSM Latam. La segunda parte es una actividad en la que participaremos todos los presentes con el fin de debatir y elaborar líneas de acción o proyectos a nivel regional para fortalecer aún más la comunidades. Para dar un marco al debate se propondrán proyectos y votaciones, entre ellas la sede del próximo SotM Latam. ",
+   "name": "Gonzalo Gabriel Perez"
+ },
+ {
+   "id": 34,
+   "title": "Análisis geoespacial en OSM con JavaScript",
+   "desc": "En este taller aprenderemos a escribir código JavaScript para correr análisis geoespacial en OSM. Con estos conocimientos podrás realizar proyectos visuales como osm-analytics.org o detectar errores en el mapa como lo hace osmlint. Usaremos turf-js, tile-reduce, y OSM QA tiles.",
+   "name": "Rodolfo Wilhelmy"
+ }
+]
+}

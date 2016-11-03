@@ -70,12 +70,12 @@ lang: en
       Program
     </h1>
   </div>
-
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <p>
-        We are selecting the talks and activities and we will publish the program very soon!
-      </p>
+  <div ng-app="App" ng-controller="sotm">
+    <div ng-repeat="day in days">
+      <h3>{[{ day.date_en }]}</h3>
+      <br>
+      {% include program.html %}
+      <br>
     </div>
   </div>
 </section>
