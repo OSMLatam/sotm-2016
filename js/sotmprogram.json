@@ -22,8 +22,8 @@
     ]
   },
   {"date_en": "Saturday - November 26th",
-  "date_es": "Sábado - 25/11",
-  "date_pt": "Sábado - 25/11",
+  "date_es": "Sábado - 26/11",
+  "date_pt": "Sábado - 26/11",
   "program": [
     {"hour": "08:30", "type": "interval", "message": "Credenciamento / Acreditación / Registration"},
     {"hour": "09:30", "auditorium": {"talk": 1, "duration": 30}, "mezanino": {"talk": 9, "duration": 30}},
