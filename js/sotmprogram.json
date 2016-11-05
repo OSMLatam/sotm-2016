@@ -7,17 +7,17 @@
     {"hour": "08:30", "type": "interval", "message": "Credenciamento / Acreditación / Registration"},
     {"hour": "09:30", "auditorium": {"talk": 22, "duration": 30}, "mezanino": {"talk": 32, "duration": 90}},
     {"hour": "10:00", "auditorium": {"talk": 23, "duration": 60}, "mezanino": {}},
-    {"hour": "11:00", "auditorium": {"talk": 20, "duration": 30}, "mezanino": {"talk": 25, "duration": 30}},
-    {"hour": "11:30", "auditorium": {"talk": 1, "duration": 30}, "mezanino": {}},
+    {"hour": "11:00", "auditorium": {"talk": 2, "duration": 30}, "mezanino": {"talk": 25, "duration": 60}},
+    {"hour": "11:30", "auditorium": {"talk": 3, "duration": 30}, "mezanino": {}},
     {"hour": "12:00", "type": "interval", "message": "Almoço / Almuerzo / Lunch"},
-    {"hour": "13:30", "auditorium": {"talk": 3, "duration": 30}, "mezanino": {"talk": 9, "duration": 30}},
-    {"hour": "14:00", "auditorium": {"talk": 8, "duration": 30}, "mezanino": {"talk": 31, "duration": 90}},
-    {"hour": "14:30", "auditorium": {"talk": 24, "duration": 30}, "mezanino": {}},
-    {"hour": "15:00", "auditorium": {"talk": 12, "duration": 30}, "mezanino": {}},
+    {"hour": "13:30", "auditorium": {"talk": 20, "duration": 30}, "mezanino": {"talk": 31, "duration": 60}},
+    {"hour": "14:00", "auditorium": {"talk": 8, "duration": 30}, "mezanino": {}},
+    {"hour": "14:30", "auditorium": {"talk": 12, "duration": 30}, "mezanino": {"talk": 35, "duration": 60}},
+    {"hour": "15:00", "auditorium": {"talk": 24, "duration": 30}, "mezanino": {}},
     {"hour": "15:30", "type": "interval", "message": "Coffee Break"},
     {"hour": "15:45", "auditorium": {"talk": 7, "duration": 30}, "mezanino": {"talk": 34, "duration": 60}},
     {"hour": "16:15", "auditorium": {"talk": 17, "duration": 30}, "mezanino": {}},
-    {"hour": "16:45", "auditorium": {"talk": 19, "duration": 30}, "mezanino": {"talk": 29, "duration": 60}},
+    {"hour": "16:45", "auditorium": {"talk": 19, "duration": 60}, "mezanino": {"talk": 29, "duration": 60}},
     {"hour": "17:45", "type": "interval", "message": "Fim / Fin / End"}
     ]
   },
@@ -26,8 +26,8 @@
   "date_pt": "Sábado - 25/11",
   "program": [
     {"hour": "08:30", "type": "interval", "message": "Credenciamento / Acreditación / Registration"},
-    {"hour": "09:30", "auditorium": {"talk": 2, "duration": 30}, "mezanino": {"talk": 28, "duration": 90}},
-    {"hour": "10:00", "auditorium": {"talk": 10, "duration": 30}, "mezanino": {}},
+    {"hour": "09:30", "auditorium": {"talk": 1, "duration": 30}, "mezanino": {"talk": 9, "duration": 30}},
+    {"hour": "10:00", "auditorium": {"talk": 10, "duration": 30}, "mezanino": {"talk": 28, "duration": 60}},
     {"hour": "10:30", "auditorium": {"talk": 14, "duration": 30}, "mezanino": {}},
     {"hour": "11:00", "auditorium": {"talk": 15, "duration": 60}, "mezanino": {"talk": 13, "duration": 30}},
     {"hour": "12:00", "type": "interval", "message": "Almoço / Almuerzo / Lunch"},
@@ -136,7 +136,7 @@
  },
  {
    "id": 16,
-   "title": "Abra seu transporte público com OpenStreetMap",
+   "title": "Open your public transport with OpenStreetMap",
    "desc": "In this presentation, I will show how data from OpenStreetMap can be used to generate GTFS, the de-facto standard for public transport data, so it can be used by Transportr and many other tools.",
    "name": "Torsten"
  },
@@ -247,6 +247,12 @@
    "title": "Análisis geoespacial en OSM con JavaScript",
    "desc": "En este taller aprenderemos a escribir código JavaScript para correr análisis geoespacial en OSM. Con estos conocimientos podrás realizar proyectos visuales como osm-analytics.org o detectar errores en el mapa como lo hace osmlint. Usaremos turf-js, tile-reduce, y OSM QA tiles.",
    "name": "Rodolfo Wilhelmy"
+ },
+ {
+   "id": 35,
+   "title": "RedeLivre",
+   "desc": "Iniciativa de movimentos da sociedade civil para fornecer serviços, dados, ferramentas e infra estrutura completa para a presença das pessoas na rede, sem barreiras comerciais ou políticas. Também se conecta a plataformas comerciais e governamentais, de forma distribuída e descentralizada.",
+   "name": "Uirá Porã"
  }
 ]
 }
