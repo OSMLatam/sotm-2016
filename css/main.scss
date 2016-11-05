@@ -237,13 +237,20 @@ h3 {
     width: 1px;
     top: 0;
 }
+
 .grid--borderBetween > [class*='col-']:before {
     left: 0;
 }
+
 .grid--borderBetween > [class*='col-']:after {
     right: -1px;
 }
+
 .grid--borderBetween > [class*='col-']:first-child:before,
 .grid--borderBetween > [class*='col-']:last-child:after {
     display: none;
+}
+
+.extra-top-padding {
+  padding-top: 10px;
 }

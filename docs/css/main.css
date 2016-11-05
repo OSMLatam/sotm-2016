@@ -183,3 +183,6 @@ h3 {
 .grid--borderBetween > [class*='col-']:first-child:before,
 .grid--borderBetween > [class*='col-']:last-child:after {
   display: none; }
+
+.extra-top-padding {
+  padding-top: 10px; }
