@@ -233,7 +233,7 @@
  {
    "id": 32,
    "title": "Utilizando y construyendo plugins de JOSM para mapear mejor",
-   "desc": "A basic hands-on workshop to start developing plugins for JOSM, covering from environment setup, to coding and testing in JOSM. Una sesión básica práctica para empezar con el desarrollo de plugins para JOSM, comprende desde la configuración del entorno, escritura de código y prueba en JOSM",
+   "desc": "Una sesión básica práctica para empezar con el desarrollo de plugins para JOSM, comprende desde la configuración del entorno, escritura de código y prueba en JOSM",
    "name": "Eliane Sammy Joyo Meneses"
  },
  {
