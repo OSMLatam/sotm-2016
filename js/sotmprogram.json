@@ -190,8 +190,8 @@
  },
  {
    "id": 25,
-   "title": "Mapping para novos mappers",
-   "desc": "Workshop to introduce people interested in mapping to all the benefits of OpenStreetMap and how to use it for their projects.",
+   "title": "Mapping para novos mapeadores",
+   "desc": "Workshop de introdução ao OpenStreetMap. Você poderá aprender a mapear, conhecerá todos os benefícios do OSM e como utilizá-lo em seus projetos.",
    "name": "Miriam González"
  },
  {
@@ -209,7 +209,7 @@
  {
    "id": 28,
    "title": "Herramientas de codigo abierto para mejorar el mapa",
-   "desc": "A sesión práctica para aprender como escribir un poco de código para la detección de errores en osmlint y subir esta detección a to-fix y mejorar el map. https://gist.github.com/Rub21/693c55331e8c80b9ebf6e2ce82fb531d",
+   "desc": "Una sesión práctica para aprender como escribir un poco de código para la detección de errores en osmlint y subir esta detección a to-fix y mejorar el mapa. https://gist.github.com/Rub21/693c55331e8c80b9ebf6e2ce82fb531d",
    "name": "Ruben Lopez Mendoza"
  },
  {
