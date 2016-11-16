@@ -11,13 +11,13 @@
     {"hour": "11:30", "auditorium": {"talk": 3, "duration": 30}, "mezanino": {}},
     {"hour": "12:00", "type": "interval", "message": "Almoço / Almuerzo / Lunch"},
     {"hour": "13:30", "auditorium": {"talk": 20, "duration": 30}, "mezanino": {"talk": 31, "duration": 60}},
-    {"hour": "14:00", "auditorium": {"talk": 8, "duration": 30}, "mezanino": {}},
-    {"hour": "14:30", "auditorium": {"talk": 12, "duration": 30}, "mezanino": {"talk": 35, "duration": 60}},
+    {"hour": "14:00", "auditorium": {"talk": 36, "duration": 30}, "mezanino": {}},
+    {"hour": "14:30", "auditorium": {"talk": 12, "duration": 30}, "mezanino": {"talk": 34, "duration": 60}},
     {"hour": "15:00", "auditorium": {"talk": 24, "duration": 30}, "mezanino": {}},
     {"hour": "15:30", "type": "interval", "message": "Coffee Break"},
-    {"hour": "15:45", "auditorium": {"talk": 7, "duration": 30}, "mezanino": {"talk": 34, "duration": 60}},
-    {"hour": "16:15", "auditorium": {"talk": 17, "duration": 30}, "mezanino": {}},
-    {"hour": "16:45", "auditorium": {"talk": 19, "duration": 60}, "mezanino": {"talk": 29, "duration": 60}},
+    {"hour": "15:45", "auditorium": {"talk": 29, "duration": 60}, "mezanino": {"talk": 7, "duration": 30}},
+    {"hour": "16:15", "auditorium": {}, "mezanino": {"talk": 17, "duration": 30}},
+    {"hour": "16:45", "auditorium": {"talk": 19, "duration": 60}, "mezanino": {"talk": 35, "duration": 60}},
     {"hour": "17:45", "type": "interval", "message": "Fim / Fin / End"}
     ]
   },
@@ -27,16 +27,17 @@
   "program": [
     {"hour": "08:30", "type": "interval", "message": "Credenciamento / Acreditación / Registration"},
     {"hour": "09:30", "auditorium": {"talk": 1, "duration": 30}, "mezanino": {"talk": 9, "duration": 30}},
-    {"hour": "10:00", "auditorium": {"talk": 10, "duration": 30}, "mezanino": {"talk": 28, "duration": 60}},
+    {"hour": "10:00", "auditorium": {"talk": 8, "duration": 30}, "mezanino": {"talk": 28, "duration": 60}},
     {"hour": "10:30", "auditorium": {"talk": 14, "duration": 30}, "mezanino": {}},
-    {"hour": "11:00", "auditorium": {"talk": 15, "duration": 60}, "mezanino": {"talk": 13, "duration": 30}},
+    {"hour": "11:00", "auditorium": {"talk": 15, "duration": 60}, "mezanino": {"talk": 37, "duration": 30}},
+    {"hour": "11:30", "auditorium": {}, "mezanino": {"talk": 13, "duration": 30}},
     {"hour": "12:00", "type": "interval", "message": "Almoço / Almuerzo / Lunch"},
     {"hour": "13:30", "auditorium": {"talk": 16, "duration": 30}, "mezanino": {"talk": 30, "duration": 60}},
     {"hour": "14:00", "auditorium": {"talk": 6, "duration": 30}, "mezanino": {}},
-    {"hour": "14:30", "auditorium": {"talk": 4, "duration": 30}, "mezanino": {"talk": 27, "duration": 60}},
-    {"hour": "15:00", "auditorium": {"talk": 5, "duration": 30}, "mezanino": {}},
+    {"hour": "14:30", "auditorium": {"talk": 4, "duration": 30}, "mezanino": {"talk": 10, "duration": 30}},
+    {"hour": "15:00", "auditorium": {"talk": 5, "duration": 30}, "mezanino": {"talk": 11, "duration": 30}},
     {"hour": "15:30", "type": "interval", "message": "Coffee Break"},
-    {"hour": "15:45", "auditorium": {"talk": 26, "duration": 60}, "mezanino": {"talk": 11, "duration": 30}},
+    {"hour": "15:45", "auditorium": {"talk": 26, "duration": 60}, "mezanino": {"talk": 27, "duration": 30}},
     {"hour": "16:15", "auditorium": {}, "mezanino": {"talk": 21, "duration": 30}},
     {"hour": "16:45", "auditorium": {"talk": 33, "duration": 60}, "mezanino": {}},
     {"hour": "17:45", "type": "interval", "message": "Fim / Fin / End"}
@@ -202,9 +203,9 @@
  },
  {
    "id": 27,
-   "title": "Planos e concepções para o desenvolvimento da comunidade",
-   "desc": "Tal grupo visa fomentar e analisar ações necessárias para o aprimoramento e crescimento da comunidade, tratando tanto da parte humana (como atrair e manter novos mapeadores, elaborar o processo de boas vindas, ampliar a comunicação entre os participantes, etc), como da parte técnica (implementação de novas ferramentas, estilos próprios de mapa, desenvolvimento de documentação, disponibilização de dados, entre outros). A intenção é ter uma conversa informal, em formato de brainstorming, para troca de pensamentos, sugestões e propostas, além de tirar dúvidas. Aberto a todos os que tiverem interesse em participar do OSM, independente de serem iniciantes ou já possuírem alguma experiência.",
-   "name": "Nelson A. de Oliveira"
+   "title": "Transporte Publico en Duitama-Colombia",
+   "desc": "Duitama es una ciudad intermedia de alrededor de 100mil habitantes, con estudiantes de secuendaria hemos realizado el levantamiento de las rutas de autobus de toda la ciudad, nos hemos integrado con el proyecto trackyourcity y queremos hacer una publicación impresa similar a la de Managua.",
+   "name": "Fredy Gamez"
  },
  {
    "id": 28,
@@ -253,6 +254,18 @@
    "title": "RedeLivre",
    "desc": "Iniciativa de movimentos da sociedade civil para fornecer serviços, dados, ferramentas e infra estrutura completa para a presença das pessoas na rede, sem barreiras comerciais ou políticas. Também se conecta a plataformas comerciais e governamentais, de forma distribuída e descentralizada.",
    "name": "Uirá Porã"
+ },
+ {
+   "id": 36,
+   "title": "O OSM como Repositório de Dados Abertos",
+   "desc": "Nesta palestra irei abordar um exemplo de importação de um pequeno dataset do osm para o GeoServer, mostrando a importância da correta definição de TAGs, uma tentativa de associação de micro-dados públicos de uma das pesquisas do IBGE em feições de uma extração do OSM. Abordarei os desafios para fazer a plataforma irresistível ao cidadão e ao Governo Federal em tempos de Big Data.",
+   "name": "Miguel Penteado"
+ },
+ {
+   "id": 37,
+   "title": "Mapa da Cultura de Campinas",
+   "desc": "O projeto é composto por dois sistemas: O Acervo Livre, é onde tudo começa. Uma biblioteca digital multimídia sobre a cidade de Campinas que contem itens e exibições. O Mapa da Cultura de Campinas, criado em cima do acervo, é usando para mapear pontos de interesse na cidade e roteiros culturais.",
+   "name": "Gabriel Fedel"
  }
 ]
 }
