@@ -5,6 +5,7 @@
   "date_pt": "Sexta-feira - 25/11",
   "program": [
     {"hour": "08:30", "type": "interval", "message": "Credenciamento / Acreditación / Registration"},
+    {"hour": "09:15", "type": "interval", "message": "Abertura / Apertura / Opening"},
     {"hour": "09:30", "auditorium": {"talk": 22, "duration": 30}, "mezanino": {"talk": 32, "duration": 90}},
     {"hour": "10:00", "auditorium": {"talk": 23, "duration": 60}, "mezanino": {}},
     {"hour": "11:00", "auditorium": {"talk": 2, "duration": 30}, "mezanino": {"talk": 25, "duration": 60}},
@@ -155,8 +156,8 @@
  },
  {
    "id": 19,
-   "title": "Mapillary",
-   "desc": "Mapillary es un street view colaborativo",
+   "title": "Mapillary - Crowdsourced Street-Level Photos",
+   "desc": "Mapillary é uma comunidade apaixonada de pessoas que querem tornar o mundo acessível a todos através da criação de uma foto-representação do mundo. Qualquer pessoa pode fazer parte da comunidade e coletar fotos a nível de rua, simplesmente usando ferramentas como smartphones ou câmeras de ação. Ao conectar usuários e fotos ao longo do tempo, podemos criar uma visualização imersiva a nível de rua para que as pessoas possam explorar virtualmente diferentes lugares do mundo. Pode ser um passeio em uma praia na Costa Rica, as ruas de Tóquio ou uma volta pelo interior da Suécia. Nós simplesmente queremos empoderar você para que possa escolher quais ruas, estradas e caminhos escondidos devem ser mapeados, e quando.",
    "name": "Cláudio Cossio & Jorge L. Batista (pb) Echevarría "
  },
  {
