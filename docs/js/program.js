@@ -9,7 +9,7 @@
   });
 
   App.controller('sotm', ['$scope', '$http', function ($scope, $http) {
-    $http.get('/js/sotmprogram.json')
+    $http.get('/sotm-2016/js/sotmprogram.json')
       .then(function(json_f) {
         $scope.days = json_f.data.days;
         $scope.talks = json_f.data.talks;
