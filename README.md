@@ -15,7 +15,7 @@ Edit code and send your PR using this [guide](https://help.github.com/articles/u
 
 ## Resources
 
-* [Website](sotm.osmlatam.org)
+* [Website](https://osmlatam.github.io/sotm-2016/)
 * [Wikipage](http://wiki.openstreetmap.org/wiki/State_of_the_Map_Latam_2016)
 * [Telegram](https://telegram.me/OSMLatam)
 * [Mailing list](https://lists.openstreetmap.org/listinfo/talk-latam)
